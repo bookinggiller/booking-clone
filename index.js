@@ -119,3 +119,51 @@ btns.forEach(function (button) {
         }
     });
 });
+
+//Emine
+
+//* 2 farklı swiper olduğu için farklı class name ler tanımlayıp querySelector ile ilgili class a ulaşılıp yapı oluşturuldu
+const swiperEl = document.querySelector(".swiper-1");
+Object.assign(swiperEl, {
+  slidesPerView: 1, //* kaç tane slaytın aynı anda görünmesini istediğimiz
+  navigation: true, //* swiper yapısı içinde gezmek true mu false mu olsun
+  breakpoints: {   //* ekran genişliğine göre slidesPerView ü ayarrlıyoruz
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 5,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 5,
+    },
+  },
+});
+swiperEl.initialize();
+
+
+const swiperEl2 = document.querySelector(".swiper-2");
+Object.assign(swiperEl2, {
+  slidesPerView: 1,
+  navigation: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 5,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 5,
+    },
+  },
+});
+swiperEl2.initialize();
+
+//Emine Bitiş

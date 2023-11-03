@@ -619,3 +619,365 @@ h2 {
     margin: 0.5rem;
     border: none;
 }
+
+
+/* EMİNE css başlangıç */
+
+:root {
+    --main-font-size: 16px;
+    --normal-font-size: 14px;
+    --small-font-size: 12px;
+    --dark-text-color: #1a1a1a;
+    --gray--text-color: #474747;
+}
+
+.main-font {
+    font-size: var(--main-font-size);
+    color: var(--dark-text-color);
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.small-font {
+    font-size: var(--small-font-size);
+    color: var(--dark-text-color);
+    text-align: center;
+}
+
+swiper-container {
+    width: 100%;
+    height: 390px;
+}
+
+swiper-slide {
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px 0 rgba(26, 26, 26, 0.16);
+    border-radius: 10px;
+    position: relative;
+    border: none;
+}
+
+.booking__card {
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px 0 rgba(26, 26, 26, 0.16);
+    border-radius: 10px;
+    position: relative;
+    border: none;
+    
+}
+
+.card__image {
+    height: 55%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    background-color: pink;
+    display: block;
+}
+
+.card-body--e {
+    height: 45%;
+}
+
+.card__address {
+    font-size: var(--small-font-size);
+    color: var(--gray--text-color);
+}
+
+.card__rating {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.card__rating-rate {
+    font-size: var(--normal-font-size);
+    color: var(--dark-text-color);
+}
+
+.card__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+
+.card__badge {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px 6px 6px 0;
+    font-size: var(--small-font-size);
+    background-color: #003b95;
+    color: #ffffff;
+}
+.carousel__heading {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container__heading {
+    margin-bottom: 24px;
+}
+/* Emine css bitiş */
+
+
+
+
+
+/* RESPONSİVE */
+
+
+/* Anında indirimlerden faydalanın telefon görünümü */
+@media screen and (max-width: 800px){
+    .container-1 {
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        .genius-earth {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: center;
+        }
+
+        .genius-earth img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .genius-words {
+            margin-top: 10px;
+        }
+
+        .genius-words h4 {
+            font-weight: bold;
+        }
+
+        .buttons-genius {
+            flex-direction: column;
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 10px;
+        }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1140px) {
+
+    header {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .header_line_top {
+
+        height: 84px;
+        padding: 8px;
+        margin-bottom: 8px;
+
+    }
+
+    .connection {
+
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+    }
+
+    .info {
+        height: auto;
+    }
+
+    .info section {
+        height: max-content;
+    }
+
+    .search {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .search input {
+        height: 52px;
+        margin-bottom: 4px;
+        margin-left: 0px;
+    }
+
+    .search input:nth-child(1) {
+        width: 100%;
+
+    }
+
+    .search input:nth-child(2) {
+        width: 49.4%;
+
+    }
+
+    .search input:nth-child(3) {
+        width: 50%;
+    }
+
+    .search button {
+        height: 52px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+
+    .block_3{
+        display: none;
+    }
+
+    .grid_01{
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    .info section h1 {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 862px) { 
+    
+    .grid_01 {
+        grid-template-rows: 200px 200px 200px 200px 200px;
+    }
+
+    .bloc_img1{
+        grid-row: 1 / 2;
+        grid-column: 1 / 7;    
+    }
+    .bloc_img2{
+        grid-row: 2 / 3;
+        grid-column: 1 / 7;    
+    }
+    .bloc_img3{
+        grid-row: 3 / 4;
+        grid-column: 1 / 7;    
+    }
+    .bloc_img4{
+        grid-row: 4 / 5;
+        grid-column: 1 / 7;    
+    }
+    .bloc_img5{
+        grid-row: 5 / 6;
+        grid-column: 1 / 7;    
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .carousel-inner {
+        display: flex;
+    }
+
+
+    .carousel-item {
+        margin-right: 0;
+        flex: 0 0 33.333333%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hızlı button {
+        margin-left: 4rem;
+    }
+
+    .seyahat {
+        flex-direction: column; 
+        margin-top: 2rem;
+        display: block;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+
+    header .header_line_top .connection .button_type2 {
+        display: none;
+    }
+
+    header .header_line_top .connection .currency .country .question {
+        display: none;
+    }
+
+    .info section h1 {
+        margin-bottom: 50px;
+    }
+
+
+    .card_slider{
+        margin-right: 16px;
+    }
+}
+@media screen and (max-width: 435px) {
+
+    .search input:nth-child(3) {
+        width: 49.4%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    header .header_line_top .connetion .button_type2 {
+        display: none;
+    }
+
+    header .header_line_top .connection .currency .country .question {
+        display: none;
+    }
+
+    header .header_line_top {
+        flex-direction: column;
+    }
+
+    .button_type3 {
+        font-size: .8em;
+    }
+
+    .info section h1 {
+        margin-bottom: 75px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    h1 {
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+
+    .button_type1{
+        display:block;
+    }
+}
+
+
+.none{
+    visibility: hidden;
+}
