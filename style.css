@@ -731,7 +731,115 @@ swiper-slide {
 
 
 
+/* DENİZ */
 
+
+/* Anında indirimlerden faydalanın css kısmı */
+.container-1{
+    background-image: url(img/world-map.7d457a5d.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    
+    margin: auto;
+    border: 1px solid rgb(233, 230, 230);
+    border-radius: 10px;
+}
+.container-2{
+    height: 40vh;
+    margin: auto;
+    border: 1px solid rgb(233, 230, 230);
+    border-radius: 10px;
+}
+.container-3{
+    height: 50vh;
+    margin: auto;
+}
+.button-genius button a{
+    text-decoration: none;
+}
+/* Sıradaki seyahat için değişen yazı ve border kısmı */
+.cnt-2-btn{
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    height: 34px;
+    color: #006ce6;
+}
+.back-circle{
+    background-image: url(img/deniz/13.png);
+    background-position: center;
+}
+
+/* Beğendiğimiz seyahat noktaları css kısmı */
+.btn-box button{
+    border: 1px solid #006ce6;
+    border-radius: 50px;
+    height: 45px;
+    margin-left: 0.5rem;
+    background: transparent;
+    outline: none;
+}
+.content ul li{
+    list-style: none;
+    margin-top: 1rem;
+    
+}
+.content ul li a{
+    text-decoration: none;
+    color: black;
+}
+.content1 ul li a{
+    text-decoration: none;
+    color: black;
+}
+.content2 ul li a{
+    text-decoration: none;
+    color: black;
+}
+.content ul li a:hover{
+    border-bottom: 1px solid black;
+    color: black;
+}
+.content1 ul li a:hover{
+    border-bottom: 1px solid black;
+    color: black;
+}
+.content2 ul li a:hover{
+    border-bottom: 1px solid black;
+    color: black;
+}
+.content1 ul li{
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.content2 ul li{
+    list-style: none;
+    margin-top: 1rem;
+}
+
+
+
+@keyframes slide-up {
+    0% {
+    bottom: -48px;
+    }
+    100% {
+    bottom: 0;
+    }
+}
+
+/* Bir sonraki button kısmı */
+.content {
+    display: none;
+}
+
+#content-1 {
+    display: block;
+}
+
+/* DENİZ CSS BITIS KISMI */
 
 /* RESPONSİVE */
 
