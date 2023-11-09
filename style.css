@@ -727,6 +727,57 @@ swiper-slide {
 .container__heading {
     margin-bottom: 24px;
 }
+/* detay-2 sayfası filtre cssleri */
+
+.filtreleme-2{
+    height: 90vh;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.price-match{
+    background-color: #ebf3ff;
+    height:7% ;
+    width: 100%;
+    color: #0071C2;
+}
+.filtre-2-item{
+    margin-bottom: 1rem;
+}
+.filtre-2{
+    background-color: #febb02;
+    height: 62%; ;
+}
+.filtre-2-item label {
+    flex: 1;
+    margin-right: 10px;
+}
+.filtre-2__input{
+    position: relative;
+    display: flex;
+    flex: 2;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.filtre-2__input input{
+display: flex;
+flex: 1;
+padding: 5px;
+}
+.checkbox-2{
+    width: 10% !important;
+}
+.iconnn{
+    margin-left: 10px
+}
+.p-filtre-2{
+    font-size: 12px;
+}
+
+
 /* Emine css bitiş */
 
 
