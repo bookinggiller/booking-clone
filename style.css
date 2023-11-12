@@ -1358,7 +1358,34 @@ footer{
         color: black;
     }
 }
-
+/* Deniz detay1 Telefon görünümü css */
+@media screen and (max-width: 800px) {
+    .border-sales {
+      width: 100%;
+    }
+  
+    .down-margin {
+      width: 100%;
+    }
+  
+    .section-image img {
+      margin-left: 0; /* Örnek: Resimleri tam ekran genişliğinde yapmak istiyorsanız bu satırı ekleyebilirsiniz */
+    }
+  
+    .right {
+      margin-right: 0;
+      text-align: left;
+    }
+  
+    .look-button {
+      width: 100%;
+    }
+  
+    #dropdown-menu {
+      width: 100%;
+    }
+  }
+  
 
 
 /* 900 piksel genişlikli telefon ekranları için stil ayarları */
