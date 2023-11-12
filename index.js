@@ -167,3 +167,36 @@ Object.assign(swiperEl2, {
 swiperEl2.initialize();
 
 //Emine Bitiş
+
+
+
+// Detay1 dropdown
+
+function toggleDropdown() {
+    var dropdown = document.getElementById("dropdown-menu");
+    if (dropdown.style.display === "block") {
+      dropdown.style.display = "none";
+    } else {
+      dropdown.style.display = "block";
+    }
+  }
+  
+  var dropdownItems = document.querySelectorAll("#dropdown-menu a");
+  
+  dropdownItems.forEach(function(item) {
+    item.addEventListener("click", function(e) {
+      e.preventDefault();
+      var buttonText = item.textContent;
+      var button = document.querySelector(".input-popular button");
+      button.textContent = "Sırala: " + buttonText;
+      toggleDropdown();
+    });
+  });
+
+
+
+
+
+
+
+
