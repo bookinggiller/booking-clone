@@ -295,6 +295,33 @@ input::placeholder {
 
 
 
+
+/* DETAY1 CSS EVREN START */
+
+
+.cekboks{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.filtreleme{
+    width: 24%;
+    height: 100vh;
+}
+
+.filtre-1{
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+
+/* DETAY1 CSS EVREN FINISH */
+
+
+
+
 /* CARD */
 
 .container {
@@ -511,27 +538,26 @@ h2 {
 /* 
 MUHAMMED DETAY-2 CSS */
 
+
+
 .filtre-1{
     border: 1px solid gray;
 }
-img{
+.info-img{
     width: 250px;
     height: 150px;
     margin-top: 25px; 
     text-align: right;
     cursor: pointer;
     padding: 10px; 
-    margin-right: 10px 
-   
-   
-    
+    margin-right: 10px;
 }
-img:hover{
+.info-img:hover{
     box-shadow: 0px 0px 20px black;
     transition: 0.4s;
 }
 
-ul li a{
+.fiilter ul li a{
     text-decoration: none;
     color: gray;
     display: flex;
@@ -539,22 +565,20 @@ ul li a{
     margin-right: 10px;
 }
 
-ul li a:hover{
+.fiilter ul li a:hover{
     border-bottom: 2px solid blue;
 }
 
-ul{
+.fiilter ul{
     display: flex;
-    
-   
 }
 
-ul li{
+.fiilter ul li{
     margin-right: 10px;
     list-style: none;
 }
 
-ul li:hover{
+.fiilter ul li:hover{
     background-color: white;
     color: grey;
     
@@ -597,6 +621,7 @@ ul li:hover{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    height: 75vh;
 }
 
 .foto-1{
@@ -865,7 +890,7 @@ swiper-slide {
 }
 .filtre-2{
     background-color: #febb02;
-    height: 62%; ;
+    height: 65%; ;
 }
 .filtre-2-item label {
     flex: 1;
@@ -894,6 +919,8 @@ padding: 5px;
 .p-filtre-2{
     font-size: 12px;
 }
+
+
 
 
 /* Emine css bitiş */
@@ -1008,6 +1035,103 @@ padding: 5px;
     display: block;
 }
 
+
+/* DENİZ DETAY-1 CSS */
+
+
+.border-sales {
+    border: 1px solid rgb(189, 182, 182);
+    border-radius: 20px;
+    width: 90%
+}
+
+/* Deniz */
+.section-image img {
+    border-radius: 3%;
+    margin-left: 1rem;
+}
+.input-popular button{
+    border-radius: 30px;
+    height: 40px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px solid black;
+    background-color: white;
+}
+.left-popular{
+  margin-left: 1rem;
+}
+.down-margin{
+  width: 70%;
+}
+.down-margin p{
+  margin-bottom: 0;
+}
+.bg-p-popular{
+  background-color: #ebc6c6;
+  border-radius: 10px;
+}
+
+.popular-border{
+  border-left: 1px solid black;
+}
+.popular-border p{
+  margin-left: 10px;
+}
+.right p{
+  margin-bottom: 0;
+}
+.left-border-point{
+  border: 1px solid blue;
+  height: 35px;
+  margin-left: 10px;
+  width: 35px;
+  text-align: center;
+  background-color: #003580;
+  color: white;
+  border-radius: 10px 10px 10px 0;
+}
+.right-p h4{
+margin-bottom: 0;
+}
+.look-button{
+height: 38px;
+width: 180px;
+color: white;
+background-color: #1b5db9;
+border: none;
+border-radius: 5px;
+}
+#dropdown-menu {
+display: none;
+position: absolute;
+background-color: #fff;
+border: 1px solid #ccc;
+z-index: 1;
+margin-top: 0.8rem;
+border-radius: 10px;
+width: 250px;
+}
+
+#dropdown-menu li {
+padding: 10px;
+list-style: none;
+}
+
+#dropdown-menu li a{
+text-decoration: none;
+color: black;
+}
+
+#dropdown-menu li:hover {
+background-color: #f0f0f0;
+}
+
+
+
+/* DENİZ DETAY-1 CSS */
+
+
 /* DENİZ CSS BITIS KISMI */
 
 
@@ -1018,14 +1142,15 @@ padding: 5px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  footer{
+}
+
+footer{
     width: 100%;
     margin: 0 auto;
     
-  }
-  
-  .row{
+}
+
+.row{
       width: 100%;
       height: 24vh;
   }
@@ -1200,6 +1325,38 @@ padding: 5px;
             margin-top: 10px;
         }
 }
+
+
+
+/* 900 piksel genişlikli telefon ekranları için stil ayarları */
+@media (max-width: 900px) {
+    .header-text h4 {
+      font-size: 20px; /* Başlık metninin boyutunu artırın */
+    }
+  
+    .input-popular {
+      text-align: center; /* Butonu ortala */
+    }
+  
+    .input-popular button {
+      width: 100%; /* Butonu ekran genişliği kadar genişletin */
+      height: 40px;
+      border-radius: 30px;
+    }
+  
+    .input-popular button i.fa-solid {
+      font-size: 14px; /* Simgelerin boyutunu ayarlayın */
+    }
+
+    .filtreleme{
+        display: block;
+    }
+  
+    /* Ekstra stillemeler */
+    /* Örneğin, arka plan rengi, metin rengi ve diğer özel stiller buraya eklenebilir */
+  }
+
+
 
 
 @media screen and (max-width: 500px){
@@ -1445,6 +1602,10 @@ padding: 5px;
 
     .button_type1{
         display:block;
+    }
+
+    .filtreleme{
+        visibility: hidden;
     }
 }
 

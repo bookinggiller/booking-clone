@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+  <!-- ORGUN FURKAN BİRDAR START -->
+  <header class="header">
+    <div class="header_line_top">
+      <div class="logo">
+        <a href="index.html">Booking.com</a>
+      </div>
+      <div class="connection">
+        <a class="currency" href="">TRY</a> <!--para birimi -->
+        <div class="country">
+          <img src="https://icons.iconarchive.com/icons/iconscity/flags/16/turkey-icon.png" width="32" height="32">
+        </div>
+        <div class="question">
+          <div class="questionInt">?</div>
+        </div>
+        <div class="button_type2">Tesisinizi kaydedin</div>
+        <div class="button_type3">Kayıt Ol</div>
+        <div class="button_type3">Giriş Yap</div>
+      </div>
+    </div>
+
+    <nav>
+      <li>
+        <ul>
+          <i class="fa-solid fa-bed"></i>
+          Konaklama
+        </ul>
+        <ul>
+          <i class="fa-solid fa-plane"></i>
+          Uçak biletleri
+        </ul>
+        <ul>
+          <i class="fa-solid fa-car"></i>
+          Araba kiralama
+        </ul>
+        <ul>
+          <i class="fa-solid fa-building-columns"></i>
+          Turistik noktalar
+        </ul>
+        <ul>
+          <i class="fa-solid fa-taxi"></i>
+          Havaalanı taksileri
+        </ul>
+      </li>
+    </nav>
+  </header>
+
+  <!-- ORGUN FURKAN BİRDAR FINISH -->
+
+
+  <!-- EVREN OĞUL START -->
+  <div class="info">
+    <section>
+      <h1>Sıradaki Konaklamanızı Bulun</h1>
+      <div class="subtitle_h1">Oteller, evler ve çok daha fazlasındaki fırsatları arayın...</div>
+
+      <div class="search">
+        <input type="search" placeholder="Nereye gidiyorsunuz?">
+        <input type="date" placeholder="Tarih">
+        <input type="number" placeholder="2 yetişkin 2 çocuk 1 oda">
+        <button>ARA</button>
+      </div>
+
+      <div class="info_checkbox">
+        <input type="checkbox" name="" id="">
+        <p>Tamamı bana ait olan bir ev veya daire arıyorum</p>
+      </div>
+      <div class="info_checkbox">
+        <input type="checkbox" name="" id="">
+        <p>İş için seyahat ediyorum</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- EVREN OĞUL FINISH -->
+
+
+  <div class="container d-flex justify-content-between mt-2">
+    <div class="filtreleme">
+      <iframe style="width: 100%; height:200px; border: none; border-radius: 10px;"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.96777910432!2d2.264634515785194!3d48.85882549208526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20Fransa!5e0!3m2!1str!2str!4v1699274412514!5m2!1str!2str"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="filtre-1">
+        <h6 class="fw-bold ms-1">Filtre Seçin:</h6>
+        <hr>
+        <div class="bilgi" style="width: 90%;">
+          <h6 class="fw-bold ms-1" >Popüler Filtreler:</h6>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="filterCheckbox">
+          <p style="width: 60%; text-align: center; ">Ücretsiz iptal</p>
+          <p style="width: 20%">4670</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="filterCheckbox">
+          <p style="width: 60%; text-align: center;">Oteller</p>
+          <p style="width: 20%;">1196</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="filterCheckbox">
+          <p style="width: 60%; text-align: center; ">1 km'den daha az merkezine uzaklığı</p>
+          <p style="width: 20%">4670</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="filterCheckbox">
+          <p style="width: 60%; text-align: center;">İki tek kişilik yatak</p>
+          <p style="width: 20%;">2833</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="filterCheckbox">
+          <p style="width: 60%; text-align: center; ">Oda ve Kahvaltılar</p>
+          <p style="width: 20%">725</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="filterCheckbox">
+          <p style="width: 60%; text-align: center;">Hosteller</p>
+          <p style="width: 20%;">31</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="filterCheckbox">
+          <p style="width: 60%; text-align: center; ">Spagna</p>
+          <p style="width: 20%">575</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="filterCheckbox">
+          <p style="width: 60%; text-align: center;">Fevkalade 9+</p>
+          <p style="width: 20%;">2833</p>
+        </div>
+        <hr>
+        <div class="bilgi">
+          <h6 class="fw-bold  ms-1">Travel Suinstable</h6>
+          <p class="fw-medium ms-1">Konaklamanızı daha sürdürülebilir kılmaya yönelik adımlar atan tesisler</p>
+        </div>
+
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="">
+          <p style="width: 60%; text-align: center; ">3. seviye üzeri</p>
+          <p style="width: 20%">29</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="">
+          <p style="width: 60%; text-align: center;">3. seviye ve üzeri</p>
+          <p style="width: 20%;">189</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="">
+          <p style="width: 60%; text-align: center; ">2.seviye ve üzeri</p>
+          <p style="width: 20%">789</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="">
+          <p style="width: 60%; text-align: center;">1.seviye ve üzeri</p>
+          <p style="width: 20%;">2276</p>
+        </div>
+        <hr>
+        <div class="bilgi">
+          <h6 class="fw-bold ms-1">Tesis puanlaması</h6>
+          <p class="fw-medium ms-1">Yıldız sayısı ve diğer puanlamalar dahil</p>
+        </div>
+
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="">
+          <p style="width: 60%; text-align: center; ">1 yıldız</p>
+          <p style="width: 20%">25</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="">
+          <p style="width: 60%; text-align: center;">2 yıldız</p>
+          <p style="width: 20%;">100</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="">
+          <p style="width: 60%; text-align: center; ">3 yıldız</p>
+          <p style="width: 20%">3378</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="">
+          <p style="width: 60%; text-align: center;">4 yıldız</p>
+          <p style="width: 20%;">3793</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="">
+          <p style="width: 60%; text-align: center; ">5 yıldız</p>
+          <p style="width: 20%">57</p>
+        </div>
+        <div class="cekboks d-flex justify-content-around">
+          <input style="width: 20%; height: 20px;" type="checkbox" name="" id="">
+          <p style="width: 60%; text-align: center;">Sınıflandırılmamış</p>
+          <p style="width: 20%;">737</p>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <!-- Deniz
+    <div class="f-right w-75">
+      <div class="header-text">
+        <h4>Paris: 5.067 Tesis bulundu</h4>
+      </div>
+      <div class="input-popular">
+        <button onclick="toggleDropdown()">
+          Sırala: Popüler seçimlerimiz <i class="fa-solid fa-up-down"></i>
+        </button>
+        <ul id="dropdown-menu">
+          <li><a href="#">Popüler seçimlerimiz</a></li>
+          <li><a href="#">Önce evler ve daireler</a></li>
+          <li><a href="#">Fiyat (önce en düşük)</a></li>
+          <li><a href="#">En iyi puan ve en düşük fiyat</a></li>
+          <li><a href="#">Tesis puanı (Yüksekten düşüğe)</a></li>
+          <li><a href="#">Tesis puanı(düşükten yükseğe)</a></li>
+          <li><a href="#">Tesis puanlaması ve fiyat</a></li>
+          <li><a href="#">Şehir merkezine uzaklığı</a></li>
+          <li><a href="#">En iyi değerlendirmeler</a></li>
+        </ul>
+      </div>
+      <div class="border-sales mt-3 section-image">
+        <div class="d-flex">
+        <div class="d-flex down-margin left">
+        <div><img class="mt-3 mb-3" src="image/deniz/45450068 (1).jpeg" width="250px" height="250px"></div>
+        <div class="left-popular mt-3"><a href="detay-2.html"><p>
+          <h4>Hotel Relais Bosquet by Malone <i class="fa-solid fa-star" style="color: #dff250;"></i>
+            <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i>
+            <i class="fa-regular fa-thumbs-up"></i></h4></p></a>
+        <p><a href="#">07, Inavlides, Paris</a> <span style="margin-left: 1rem;"><a href="#">Haritada göster</a></span></p>
+        <p>Merkez: 3,4 km <span style="margin-left: 1rem;">Metroya yakın</span></p>
+        <p class="bg-p-popular" style="font-size: 13px; margin-left: 5px; width: 68%;"><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #000000;"></i>Travel Sustainable 2.seviye</p>
+        <div style="font-size: 12px;" class="mt-3 popular-border"><p><b>Standart Çift Kişilik veya Yataklı oda</b></p>
+        <p>Yataklar: 1 çift kişilik veya 2 tek kişilik</p>
+        <p style="color: green;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>Ücretsiz iptal</b></p>
+        <p style="color: green; width: 80%;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>Ön ödemeye gerek yok</b>- Tesiste <span style="margin-left: 15px;"><br>ödeyin</span></p>
+        <p style="color: red;"><b>Sitemizde bu fiyata sadece 2 oda kaldı</b></p>
+      </div>
+    </div>
+  </div>
+  <div class="right ms-auto mt-3" style="margin-right: 2rem; text-align: right;">
+  <div class="d-flex">
+    <div class="right"><p style="text-align: right;"><b>Müthiş </b></p>
+    <p style="text-align: right; font-size: 13px;">982 değerlendirme</p>
+    </div>
+    <div class="left mt-1 left-border-point"><p>8,7</p></div>
+  </div>
+  <div><p style="color: rgb(7, 97, 97);"><b>Konum 9,5</b></p></div>
+  <div class="mt-5 right-p">
+    <p style="font-size: 14px; color: gray;">5 gece, 2 yetişkin</p>
+    <h4>TL 25.121</h4>
+    <p style="font-size: 14px; color: gray;">+TL 562 vergi ve ücretler</p>
+    <button class="mt-2 look-button">Yer Durumuna bak  ></button>
+  </div>
+  </div>
+</div>
+    </div>
+      <div class="border-sales mt-3 section-image">
+        <div class="d-flex">
+        <div class="d-flex down-margin left">
+        <div><img class="mt-3 mb-3" src="image/deniz/45450068 (1).jpeg" width="250px" height="250px"></div>
+        <div class="left-popular mt-3"><a href="detay-2.html"><p><h4>Hotel Relais Bosquet by Malone <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
+        <p><a href="#">07, Inavlides, Paris</a> <span style="margin-left: 1rem;"><a href="#">Haritada göster</a></span></p>
+        <p>Merkez: 3,4 km <span style="margin-left: 1rem;">Metroya yakın</span></p>
+        <p class="bg-p-popular" style="font-size: 13px; margin-left: 5px; width: 68%;"><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #000000;"></i>Travel Sustainable 2.seviye</p>
+        <div style="font-size: 12px;" class="mt-3 popular-border"><p><b>Standart Çift Kişilik veya Yataklı oda</b></p>
+        <p>Yataklar: 1 çift kişilik veya 2 tek kişilik</p>
+        <p style="color: green;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>Ücretsiz iptal</b></p>
+        <p style="color: green; width: 80%;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>Ön ödemeye gerek yok</b>- Tesiste <span style="margin-left: 15px;"><br>ödeyin</span></p>
+        <p style="color: red;"><b>Sitemizde bu fiyata sadece 2 oda kaldı</b></p>
+      </div>
+    </div>
+  </div>
+  <div class="right ms-auto mt-3" style="margin-right: 2rem; text-align: right;">
+  <div class="d-flex">
+    <div class="right"><p style="text-align: right;"><b>Müthiş </b></p>
+    <p style="text-align: right; font-size: 13px;">982 değerlendirme</p>
+    </div>
+    <div class="left mt-1 left-border-point"><p>8,7</p></div>
+  </div>
+  <div><p style="color: rgb(7, 97, 97);"><b>Konum 9,5</b></p></div>
+  <div class="mt-5 right-p">
+    <p style="font-size: 14px; color: gray;">5 gece, 2 yetişkin</p>
+    <h4>TL 25.121</h4>
+    <p style="font-size: 14px; color: gray;">+TL 562 vergi ve ücretler</p>
+    <button class="mt-2 look-button">Yer Durumuna bak  ></button>
+  </div>
+  </div>
+</div>
+    </div>
+      <div class="border-sales mt-3 section-image">
+        <div class="d-flex">
+        <div class="d-flex down-margin left">
+        <div><img class="mt-3 mb-3" src="image/deniz/45450068 (1).jpeg" width="250px" height="250px"></div>
+        <div class="left-popular mt-3"><a href="detay-2.html"><p><h4>Hotel Relais Bosquet by Malone <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
+        <p><a href="#">07, Inavlides, Paris</a> <span style="margin-left: 1rem;"><a href="#">Haritada göster</a></span></p>
+        <p>Merkez: 3,4 km <span style="margin-left: 1rem;">Metroya yakın</span></p>
+        <p class="bg-p-popular" style="font-size: 13px; margin-left: 5px; width: 68%;"><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #000000;"></i>Travel Sustainable 2.seviye</p>
+        <div style="font-size: 12px;" class="mt-3 popular-border"><p><b>Standart Çift Kişilik veya Yataklı oda</b></p>
+        <p>Yataklar: 1 çift kişilik veya 2 tek kişilik</p>
+        <p style="color: green;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>Ücretsiz iptal</b></p>
+        <p style="color: green; width: 80%;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>Ön ödemeye gerek yok</b>- Tesiste <span style="margin-left: 15px;"><br>ödeyin</span></p>
+        <p style="color: red;"><b>Sitemizde bu fiyata sadece 2 oda kaldı</b></p>
+      </div>
+    </div>
+  </div>
+  <div class="right ms-auto mt-3" style="margin-right: 2rem; text-align: right;">
+  <div class="d-flex">
+    <div class="right"><p style="text-align: right;"><b>Müthiş </b></p>
+    <p style="text-align: right; font-size: 13px;">982 değerlendirme</p>
+    </div>
+    <div class="left mt-1 left-border-point"><p>8,7</p></div>
+  </div>
+  <div><p style="color: rgb(7, 97, 97);"><b>Konum 9,5</b></p></div>
+  <div class="mt-5 right-p">
+    <p style="font-size: 14px; color: gray;">5 gece, 2 yetişkin</p>
+    <h4>TL 25.121</h4>
+    <p style="font-size: 14px; color: gray;">+TL 562 vergi ve ücretler</p>
+    <button class="mt-2 look-button">Yer Durumuna bak  ></button>
+  </div>
+  </div>
+</div>
+    </div>
+      <div class="border-sales mt-3 section-image">
+        <div class="d-flex">
+        <div class="d-flex down-margin left">
+        <div><img class="mt-3 mb-3" src="image/deniz/45450068 (1).jpeg" width="250px" height="250px"></div>
+        <div class="left-popular mt-3"><a href="detay-2.html"><p><h4>Hotel Relais Bosquet by Malone <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
+        <p><a href="#">07, Inavlides, Paris</a> <span style="margin-left: 1rem;"><a href="#">Haritada göster</a></span></p>
+        <p>Merkez: 3,4 km <span style="margin-left: 1rem;">Metroya yakın</span></p>
+        <p class="bg-p-popular" style="font-size: 13px; margin-left: 5px; width: 68%;"><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #000000;"></i>Travel Sustainable 2.seviye</p>
+        <div style="font-size: 12px;" class="mt-3 popular-border"><p><b>Standart Çift Kişilik veya Yataklı oda</b></p>
+        <p>Yataklar: 1 çift kişilik veya 2 tek kişilik</p>
+        <p style="color: green;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>Ücretsiz iptal</b></p>
+        <p style="color: green; width: 80%;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>Ön ödemeye gerek yok</b>- Tesiste <span style="margin-left: 15px;"><br>ödeyin</span></p>
+        <p style="color: red;"><b>Sitemizde bu fiyata sadece 2 oda kaldı</b></p>
+      </div>
+    </div>
+  </div>
+  <div class="right ms-auto mt-3" style="margin-right: 2rem; text-align: right;">
+  <div class="d-flex">
+    <div class="right"><p style="text-align: right;"><b>Müthiş </b></p>
+    <p style="text-align: right; font-size: 13px;">982 değerlendirme</p>
+    </div>
+    <div class="left mt-1 left-border-point"><p>8,7</p></div>
+  </div>
+  <div><p style="color: rgb(7, 97, 97);"><b>Konum 9,5</b></p></div>
+  <div class="mt-5 right-p">
+    <p style="font-size: 14px; color: gray;">5 gece, 2 yetişkin</p>
+    <h4>TL 25.121</h4>
+    <p style="font-size: 14px; color: gray;">+TL 562 vergi ve ücretler</p>
+    <button class="mt-2 look-button">Yer Durumuna bak  ></button>
+  </div>
+  </div>
+</div>
+    </div>
+      <div class="border-sales mt-3 section-image">
+        <div class="d-flex">
+        <div class="d-flex down-margin left">
+        <div><img class="mt-3 mb-3" src="image/deniz/45450068 (1).jpeg" width="250px" height="250px"></div>
+        <div class="left-popular mt-3"><a href="detay-2.html"><p><h4>Hotel Relais Bosquet by Malone <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
+        <p><a href="#">07, Inavlides, Paris</a> <span style="margin-left: 1rem;"><a href="#">Haritada göster</a></span></p>
+        <p>Merkez: 3,4 km <span style="margin-left: 1rem;">Metroya yakın</span></p>
+        <p class="bg-p-popular" style="font-size: 13px; margin-left: 5px; width: 68%;"><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #000000;"></i>Travel Sustainable 2.seviye</p>
+        <div style="font-size: 12px;" class="mt-3 popular-border"><p><b>Standart Çift Kişilik veya Yataklı oda</b></p>
+        <p>Yataklar: 1 çift kişilik veya 2 tek kişilik</p>
+        <p style="color: green;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>Ücretsiz iptal</b></p>
+        <p style="color: green; width: 80%;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>Ön ödemeye gerek yok</b>- Tesiste <span style="margin-left: 15px;"><br>ödeyin</span></p>
+        <p style="color: red;"><b>Sitemizde bu fiyata sadece 2 oda kaldı</b></p>
+      </div>
+    </div>
+  </div>
+  <div class="right ms-auto mt-3" style="margin-right: 2rem; text-align: right;">
+  <div class="d-flex">
+    <div class="right"><p style="text-align: right;"><b>Müthiş </b></p>
+    <p style="text-align: right; font-size: 13px;">982 değerlendirme</p>
+    </div>
+    <div class="left mt-1 left-border-point"><p>8,7</p></div>
+  </div>
+  <div><p style="color: rgb(7, 97, 97);"><b>Konum 9,5</b></p></div>
+  <div class="mt-5 right-p">
+    <p style="font-size: 14px; color: gray;">5 gece, 2 yetişkin</p>
+    <h4>TL 25.121</h4>
+    <p style="font-size: 14px; color: gray;">+TL 562 vergi ve ücretler</p>
+    <button class="mt-2 look-button">Yer Durumuna bak  ></button>
+  </div>
+  </div>
+</div>
+    </div>
+      <div class="border-sales mt-3 section-image">
+        <div class="d-flex">
+        <div class="d-flex down-margin left">
+        <div><img class="mt-3 mb-3" src="image/deniz/45450068 (1).jpeg" width="250px" height="250px"></div>
+        <div class="left-popular mt-3"><a href="detay-2.html"><p><h4>Hotel Relais Bosquet by Malone <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
+        <p><a href="#">07, Inavlides, Paris</a> <span style="margin-left: 1rem;"><a href="#">Haritada göster</a></span></p>
+        <p>Merkez: 3,4 km <span style="margin-left: 1rem;">Metroya yakın</span></p>
+        <p class="bg-p-popular" style="font-size: 13px; margin-left: 5px; width: 68%;"><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #000000;"></i>Travel Sustainable 2.seviye</p>
+        <div style="font-size: 12px;" class="mt-3 popular-border"><p><b>Standart Çift Kişilik veya Yataklı oda</b></p>
+        <p>Yataklar: 1 çift kişilik veya 2 tek kişilik</p>
+        <p style="color: green;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>Ücretsiz iptal</b></p>
+        <p style="color: green; width: 80%;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>Ön ödemeye gerek yok</b>- Tesiste <span style="margin-left: 15px;"><br>ödeyin</span></p>
+        <p style="color: red;"><b>Sitemizde bu fiyata sadece 2 oda kaldı</b></p>
+      </div>
+    </div>
+  </div>
+  <div class="right ms-auto mt-3" style="margin-right: 2rem; text-align: right;">
+  <div class="d-flex">
+    <div class="right"><p style="text-align: right;"><b>Müthiş </b></p>
+    <p style="text-align: right; font-size: 13px;">982 değerlendirme</p>
+    </div>
+    <div class="left mt-1 left-border-point"><p>8,7</p></div>
+  </div>
+  <div><p style="color: rgb(7, 97, 97);"><b>Konum 9,5</b></p></div>
+  <div class="mt-5 right-p">
+    <p style="font-size: 14px; color: gray;">5 gece, 2 yetişkin</p>
+    <h4>TL 25.121</h4>
+    <p style="font-size: 14px; color: gray;">+TL 562 vergi ve ücretler</p>
+    <button class="mt-2 look-button">Yer Durumuna bak  ></button>
+  </div>
+  </div>
+</div>
+    </div>
+    </div> -->
+  </div>
+
+
+<!--FATİH-->
+
+
+<footer>  
+  <div class="row section-row align-items-center justify-content-center m-0" id="footer-bg">
+      <div class=" container col-md-5 text-white text-center">
+          <h2>Zamandan ve paradan tasarruf edin!</h2>
+          <p>Kaydolursanız en iyi fırsatları size göndereceğiz</p>
+      <div class="input-group">
+          <input type="text" class="form-control" placeholder="E-posta Adresi"
+               aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="buton btn-primary ms-2 w-25" type="button">Üye ol</button>
+      </div>
+      </div>
+  </div>
+  <div class="footer-center">
+      <button class="buton-1">Tesisiniz kaydedin </button>
+  </div>
+  <div class="content-ul-li">
+      <ul class="container d-flex ">
+          <li><a style="list-style-type: none;" class="text-white" href="#">Mobil sürüm</a></li>
+          <li><a class="text-white" href="#">Hesabınız </a></li>
+          <li><a class="text-white" href="#">Rezervasyon değişikliklerinizi online yapın</a></li>
+          <li><a class="text-white" href="#">Müşteri hizmetleri yardımı</a></li>
+          <li><a class="text-white" href="#">İştirak olun</a></li>
+          <li><a class="text-white" href="#">Booking.com Business</a></li>
+      </ul>
+  </div>
+  <div class="row-1">
+      <col-md-5>
+      <ul>
+          <li><a href="#">Ülkeler</a></li>
+          <li><a href="#">Bölgeler</a></li>
+          <li><a href="#">Şehirler</a></li>
+          <li><a href="#">Semtler</a></li>
+          <li><a href="#">Havaalanları</a></li>
+          <li><a href="#">Oteller</a></li>
+          <li><a href="#">Simgesel</a></li>
+      </ul>
+      </col-md-5>
+      <ul>
+          <li><a href="#">Evler</a></li>
+          <li><a href="#">Daireler</a></li>
+          <li><a href="#">Tatil Köyleri</a></li>
+          <li><a href="#">Villalar</a></li>
+          <li><a href="#">Hosteller</a></li>
+          <li><a href="#">Oda ve Kahvaltılar</a></li>
+          <li><a href="#">Konukevleri</a></li>
+      </ul>
+      </col-md-5>
+      <ul>
+          <li><a href="#">Konaklayacak benzersiz yerler</a></li>
+          <li><a href="#">Tüm destinasyonlar</a></li>
+          <li><a href="#">Tüm uçuş noktaları</a></li>
+          <li><a href="#">Araba kiralama konumlarının tamamı</a></li>
+          <li><a href="#">Daha fazlasını keşfet</a></li>
+          <li><a href="#">Değerlendirmeler</a></li>
+          <li><a href="#">Aylık konaklamaları keşfedin</a></li>
+          <li><a href="#">Sezonluk fırsatlar ve tatil fırsatları</a></li>
+          <li><a href="#">Traveller Review Awards</a></li>
+      </ul>
+      </col-md-5>
+      <ul>
+          <li><a href="#">Araba kiralama</a></li>
+          <li><a href="#">Uçuş arayıcı</a></li>
+          <li><a href="#">Restoran rezervasyonları</a></li>
+          <li><a href="#">Booking.com Seyahat Temsilcileri</a></li>
+      </ul>
+      </col-md-5>
+      <ul>
+          <li><a href="#">Koronavirüs (COVID-19) hakkında sıkça sorulan sorular</a></li>
+          <li><a href="#">Booking.com hakkında</a></li>
+          <li><a href="#">Müşteri Hizmetleri yardımı</a></li>
+          <li><a href="#">Ortaklar için yardım sayfası</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Sürdürülebilirlik</a></li>
+          <li><a href="#">Basın merkezi</a></li>
+          <li><a href="#">Güvenlik kaynak merkezi</a></li>
+          <li><a href="#">Yatırımcı ilişkileri</a></li>
+          <li><a href="#">Şartlar ve koşullar</a></li>
+          <li><a href="#">Ortak ihtilaf çözüm merkezi</a></li>
+          <li><a href="#">Çalışma şeklimiz</a></li>
+          <li><a href="#">Gizlilik ve Çerez Bildirimi</a></li>
+          <li><a href="#">MSA Bildirimi</a></li>
+          <li><a href="#">Kurumsal iletişim</a></li>
+          <li><a href="#">İçerik kuralları ve raporlama</a></li>
+      </ul>
+      </col-md-5>
+  </div>
+  <div class="footer-end">
+          <p class="extranet"><a href="#">Extranet girişi</a></p>
+          <p class="telif">Telif © 1996–2023 Booking.com™. Tüm hakları saklıdır.</p>
+          <p class="booking">Booking.com, online seyahat ve ilgili hizmetlerde dünya lideri olan Booking Holdings Inc.'in bir parçasıdır.</p>
+      <div class="img-end">
+          <img src="img/Fatih/booking.png" alt="">
+          <img src="img/Fatih/priceline.png" alt="">
+          <img src="img/Fatih/kayak.png" alt="">
+          <img src="img/Fatih/agoda.png" alt="">
+          <img src="img/Fatih/rentalcars.png" alt="">
+          <img src="img/Fatih/opentable.png" alt="">
+      </div>
+  </div>
+
+
+</footer>
+
+
+
+<!--FATİH-->
+
+
+
+
+  <!-- Script -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
