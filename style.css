@@ -764,7 +764,6 @@ MUHAMMED DETAY-2 CSS */
 }
 
 /* DETAY-2 CSS MERT */
-
 .populer i{
     color: green;
     margin-right: 0.5rem;
@@ -779,6 +778,7 @@ MUHAMMED DETAY-2 CSS */
     display: flex;
     justify-content: end;
 }
+
 
 /* EMİNE css başlangıç */
 
@@ -979,8 +979,20 @@ padding: 5px;
     color: #006ce6;
 }
 .back-circle{
-    background-image: url(img/deniz/13.png);
+    background-image: url(img/deniz/14.png);
     background-position: center;
+}
+.ground-text{
+    width: 80%;
+    padding: 4rem;
+    text-align: start;
+    margin: 0 auto;
+    text-decoration: none; 
+    color: white;
+}
+.ground-text h4 a{
+    text-decoration: none; 
+    color: white;
 }
 
 /* Beğendiğimiz seyahat noktaları css kısmı */
@@ -1341,7 +1353,55 @@ footer{
             margin-top: 10px;
         }
 }
+@media screen and (max-width: 1400px){
+    .back-circle{
+        background-image: url(img/deniz/13.png);
+        background-position: center;
+    }
 
+    .ground-text{
+        width: 70%;
+        padding: 1rem;
+        text-align: start;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 1200px){
+    .back-circle{
+        background-image: none;
+}
+    .ground-text h4 a{
+        color: black;
+    }
+}
+/* Deniz detay1 Telefon görünümü css */
+@media screen and (max-width: 800px) {
+    .border-sales {
+      width: 100%;
+    }
+  
+    .down-margin {
+      width: 100%;
+    }
+  
+    .section-image img {
+      margin-left: 0; /* Örnek: Resimleri tam ekran genişliğinde yapmak istiyorsanız bu satırı ekleyebilirsiniz */
+    }
+  
+    .right {
+      margin-right: 0;
+      text-align: left;
+    }
+  
+    .look-button {
+      width: 100%;
+    }
+  
+    #dropdown-menu {
+      width: 100%;
+    }
+  }
+  
 
 
 /* 900 piksel genişlikli telefon ekranları için stil ayarları */
@@ -1585,6 +1645,8 @@ footer{
     }
 
 }
+
+
 
 @media screen and (max-width: 400px) {
 
