@@ -23,7 +23,7 @@
     margin-left: 1rem;
 }
 .bilgi{
-    height: 42vh;
+    /* height: 42vh; */
     margin-top: 1rem;
     border: 1px solid lightgray;
     border-radius: 10px;
@@ -47,7 +47,7 @@
 }
 
 .standart{
-    height: 35vh;
+    /* height: 35vh; */
     margin-top: 1rem;
     border: 1px solid lightgray;
     border-radius: 10px;
@@ -71,7 +71,7 @@
     margin-right: 0.3rem;
 }
 .özel{
-    height: 35vh;
+    /* height: 35vh; */
     margin-top: 1rem;
     border: 1px solid lightgray;
     border-radius: 10px;
