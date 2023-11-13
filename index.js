@@ -193,49 +193,7 @@ function toggleDropdown() {
     });
   });
 
-// Deniz Başlangıç
-//! Sıradaki seyahatlar kısmındaki değişen yazının javascripti 
-const textArray = [
-  "eviniz",
-  "kulübeler",
-  "daireler",
-  "apart oteller",
-  "villalar",
-  "tatil evleri"
-  ];
-  let currentIndex = 0;
-  const textElement = document.getElementById("text-container");
 
-  function changeText() {
-  textElement.innerHTML = textArray[currentIndex];
-  currentIndex = (currentIndex + 1) % textArray.length;
-  }
-
-  setInterval(changeText, 1000);
-
-
-//! Beğendiğimiz seyahat noktaları JAVASCRİPT Kısmı
-
-function openBOLGELER() {
-  document.getElementById('content-1').style.display = 'block';
-  document.getElementById('content-2').style.display = 'none';
-  document.getElementById('content-3').style.display = 'none';
-}
-
-function openSEHIRLER() {
-  document.getElementById('content-1').style.display = 'none';
-  document.getElementById('content-2').style.display = 'block';
-  document.getElementById('content-3').style.display = 'none';
-}
-
-function openSIMGESELYAPILAR() {
-  document.getElementById('content-1').style.display = 'none';
-  document.getElementById('content-2').style.display = 'none';
-  document.getElementById('content-3').style.display = 'block';
-}
-
-
-// Deniz Bitiş
 
 
 
