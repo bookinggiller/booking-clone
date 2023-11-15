@@ -23,5 +23,11 @@ from .views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',index,name='base')
+    path('',index,name='base'),
+    path('detay1',detay1,name='detay1'),
+    path('detay2',detay2,name='detay2'),
+    path('odeme',odeme,name='odeme'),
+
+
+
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
