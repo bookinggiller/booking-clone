@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'user',
     'movie',
     #bootstrap ve fontawesome install sonrası eklendi
-    'bootstrap5',
+    'django_bootstrap5',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
