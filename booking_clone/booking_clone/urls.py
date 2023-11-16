@@ -27,7 +27,7 @@ urlpatterns = [
     path('detay1',detay1,name='detay1'),
     path('detay2',detay2,name='detay2'),
     path('odeme',odeme,name='odeme'),
-
+    path('login/',login,name='login')
 
 
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

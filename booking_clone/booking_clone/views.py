@@ -14,3 +14,6 @@ def detay2(request):
 
 def odeme(request):
     return render(request,'odeme.html')
+
+def login(request):
+    return render(request,'login.html')
