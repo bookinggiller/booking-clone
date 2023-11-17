@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'movie',
     #bootstrap ve fontawesome install sonrası eklendi
     'django_bootstrap5',
+    #iyzico
+   
+    'iyzipay',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

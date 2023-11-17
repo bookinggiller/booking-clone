@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="{% static 'css/odeme.css' %}">
 {% endblock css %}
 
-
+{% csrf_token %}
 
 {% block content %}
 <div class="container">
@@ -103,7 +103,7 @@
     </div>
     <div class="row">
         <div class="col-md-6 odeme">
-            <button class="odemebtn">Ödeme Yap</button>
+           <a href="{%  url 'payment' %}"><button class="odemebtn">Ödeme Yap</button></a> 
         </div>
     </div>
 </div>
@@ -111,3 +111,6 @@
 
 
 {% endblock content %}
+
+
+<!-- {%  url 'payment' %} -->

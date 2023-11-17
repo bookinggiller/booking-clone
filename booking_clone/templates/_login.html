@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Detay2 sayfası</title>
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock css %}
+
+
+{% block content %}
+
+
+
+<header class="header">
+    <div class="header_line_top">
+      <div class="logo">
+        <a href="">Booking.com</a>
+      </div>
+      <div class="connection">
+        <div class="country">
+          <img
+            src="https://icons.iconarchive.com/icons/iconscity/flags/16/turkey-icon.png"
+            width="32"
+            height="32"
+          />
+        </div>
+        <div class="question">
+          <div class="questionInt">?</div>
+        </div>
+     
+      </div>
+    </div>
+  </header>
+  <section class="register-section">
+    <div class="register-section-content">
+      <h4 class="register-section-content-header">Giriş yapın veya hesap oluşturun</h4>
+      <form
+        action="
+      "
+        class="register-form"
+      >
+        <label for="email">E-posta adresi</label>
+        <input
+          placeholder="E-posta adresinizi girin"
+          type="text"
+          name="email"
+          id="email"
+          class="register-input"
+        />
+      </form>
+      <button class="register-button">E-postayla devam et</button>
+      <div class="under-button-section">
+        <div></div>
+        <p>veya bu seçeneklerden birini kullan</p>
+        <div></div>
+      </div>
+      <div class="google-card-section">
+        <div class="google-card">
+          <a href=""><i class="fa-brands fa-google fa-2x"></i></a>
+          <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href=""><i class="fa-brands fa-apple fa-2x"></i></a>           
+        </div>
+        <div class="line"></div>
+        <span class="information-text">
+         Bir hesaba giriş yaparak ya da hesap oluşturarak <a href="">Şartlar ve Koşullarımız</a> ile <a href="">Gizlilik Bildirimimizi</a>    kabul etmiş olursunuz
+        </span>
+        <div class="line"></div>
+        <span class="footer-text">Tüm hakları saklıdır.</span>
+        <span class="footer-text">Telif hakkı (2006 - 2023) - Booking.com™</span>
+      </div>
+      
+    </div>
+  </section>
+
+  {% endblock content %}

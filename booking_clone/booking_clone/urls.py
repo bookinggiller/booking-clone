@@ -21,13 +21,21 @@ from django.conf import settings
 from .views import *
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',index,name='base'),
     path('detay1',detay1,name='detay1'),
     path('detay2',detay2,name='detay2'),
     path('odeme',odeme,name='odeme'),
+    path('login/',login,name='_login'),
 
+    #iyzico
+    path('iyzico/',iyzico,name='iyzico'),
+    path('payment/',payment,name='payment'),
+    path('ok/',success,name='success'),
+    path('fail/',fail,name='fail'),
+    path('result/',result,name='result'),
 
 
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
