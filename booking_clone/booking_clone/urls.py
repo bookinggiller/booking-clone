@@ -29,6 +29,11 @@ urlpatterns = [
     path('detay1',detay1,name='detay1'),
     path('detay2',detay2,name='detay2'),
     path('odeme',odeme,name='odeme'),
+    path('iyzico',iyzico,name='iyzico'),
+    path('payment/',payment,name='payment'),
+    path('ok/',success,name='success'),
+    path('fail/',fail,name='fail'),
+    path('result/',result,name='result'),
     # path('login/',login,name='login'),
     path('user/login',include('user.urls')),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
