@@ -2,7 +2,7 @@
 <header class="header">
     <div class="header_line_top">
         <div class="logo">
-            <a href="index.html">Booking.com</a>
+            <a href="{% url 'base' %}">Booking.com</a>
         </div>
         <div class="connection">
             <a class="currency" href="">TRY</a> <!--para birimi -->
@@ -14,8 +14,8 @@
                 <div class="questionInt">?</div>
             </div>
             <div class="button_type2">Tesisinizi kaydedin</div>
-            <div class="button_type3">Kayıt Ol</div>
-            <div class="button_type3">Giriş Yap</div>
+            <a href="{% url 'login' %}"><div class="button_type3">Kayıt Ol</div></a>
+            <a href="{% url 'login' %}"><div class="button_type3">Giriş Yap</div></a>
         </div>
     </div>
 

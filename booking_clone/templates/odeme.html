@@ -10,10 +10,14 @@
 <link rel="stylesheet" href="{% static 'css/odeme.css' %}">
 {% endblock css %}
 
+{% block script %}
+<link rel="stylesheet" src="{% static 'script/odeme.js' %}">
+{% endblock script %}
+
 
 
 {% block content %}
-<div class="container">
+<div class="container" style="width: 100%;">
     <div class="row">
         <div class="col-md-6 mt-2 giris">
             <div class="giris1">
@@ -103,7 +107,7 @@
     </div>
     <div class="row">
         <div class="col-md-6 odeme">
-            <button class="odemebtn">Ödeme Yap</button>
+            <a href="{% url 'payment' %}"><button class="odemebtn" style="width: 100%;">Ödeme Yap</button></a>
         </div>
     </div>
 </div>

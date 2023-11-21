@@ -10,7 +10,7 @@
  <header class="header">
     <div class="header_line_top">
       <div class="logo">
-        <a href="index.html">Booking.com</a>
+        <a href="{% url 'base' %}">Booking.com</a>
       </div>
       <div class="connection">
         <a class="currency" href="">TRY</a> <!--para birimi -->
@@ -21,8 +21,8 @@
           <div class="questionInt">?</div>
         </div>
         <div class="button_type2">Tesisinizi kaydedin</div>
-        <div class="button_type3">Kayıt Ol</div>
-        <div class="button_type3">Giriş Yap</div>
+        <a href="{% url 'login' %}"><div class="button_type3">Kayıt Ol</div></a>
+        <a href="{% url 'login' %}"><div class="button_type3">Giriş Yap</div></a>
       </div>
     </div>
 
@@ -65,7 +65,8 @@
         <input type="search" placeholder="Nereye gidiyorsunuz?">
         <input type="date" placeholder="Tarih">
         <input type="number" placeholder="2 yetişkin 2 çocuk 1 oda">
-        <button>ARA</button>
+        <a href="{% url 'detay1' %}"><button>ARA</button></a>
+        
       </div>
 
       <div class="info_checkbox">
@@ -231,7 +232,7 @@
         <div class="d-flex">
         <div class="d-flex down-margin left">
         <div><img class="mt-3 mb-3" src="image/deniz/45450068 (1).jpeg" width="250px" height="250px"></div>
-        <div class="left-popular mt-3"><a href="detay-2.html"><p>
+        <div class="left-popular mt-3"><a href="{% url 'detay2' %}"><p>
           <h4>Hotel Relais Bosquet by Malone <i class="fa-solid fa-star" style="color: #dff250;"></i>
             <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i>
             <i class="fa-regular fa-thumbs-up"></i></h4></p></a>
@@ -271,7 +272,7 @@
         <div class="d-flex">
         <div class="d-flex down-margin left">
         <div><img class="mt-3 mb-3" src="image/deniz/hotel-2.jpg" width="250px" height="250px"></div>
-        <div class="left-popular mt-3"><a href="detay-2.html"><p><h4>The People Paris Marais <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
+        <div class="left-popular mt-3"><a href="{% url 'detay2' %}"><p><h4>The People Paris Marais <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
         <p><a href="#">Centre Pompidou, Paris</a> <span style="margin-left: 1rem;"><a href="#">Haritada göster</a></span></p>
         <p>Merkez: 20 km <span style="margin-left: 1rem;">Metroya yakın</span></p>
         <p class="bg-p-popular" style="font-size: 13px; margin-left: 5px; width: 68%;"><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #000000;"></i>Travel Sustainable 2.seviye</p>
@@ -308,7 +309,7 @@
         <div class="d-flex">
         <div class="d-flex down-margin left">
         <div><img class="mt-3 mb-3" src="image/deniz/paris-eiffel-hotel.jpg" width="250px" height="250px"></div>
-        <div class="left-popular mt-3"><a href="detay-2.html"><p><h4>Pullman Paris Tour Eiffel<i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
+        <div class="left-popular mt-3"><a href="{% url 'detay2' %}"><p><h4>Pullman Paris Tour Eiffel<i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
         <p><a href="#">Eiffel, Paris</a> <span style="margin-left: 1rem;"><a href="#">Haritada göster</a></span></p>
         <p>Merkez: 1 km <span style="margin-left: 1rem;">Metroya yakın</span></p>
         <p class="bg-p-popular" style="font-size: 13px; margin-left: 5px; width: 68%;"><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #000000;"></i>Travel Sustainable 2.seviye</p>
@@ -345,7 +346,7 @@
         <div class="d-flex">
         <div class="d-flex down-margin left">
         <div><img class="mt-3 mb-3" src="image/deniz/hotel-4.jpg" width="250px" height="250px"></div>
-        <div class="left-popular mt-3"><a href="detay-2.html"><p><h4>Novotel Paris Les Halles <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
+        <div class="left-popular mt-3"><a href="{% url 'detay2' %}"><p><h4>Novotel Paris Les Halles <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
         <p><a href="#"> Telephone Bank, Paris</a> <span style="margin-left: 1rem;"><a href="#">Haritada göster</a></span></p>
         <p>Merkez: 8 km <span style="margin-left: 1rem;">Metroya yakın</span></p>
         <p class="bg-p-popular" style="font-size: 13px; margin-left: 5px; width: 68%;"><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #000000;"></i>Travel Sustainable 2.seviye</p>
@@ -382,7 +383,7 @@
         <div class="d-flex">
         <div class="d-flex down-margin left">
         <div><img class="mt-3 mb-3" src="image/deniz/hotel-5.png" width="250px" height="250px"></div>
-        <div class="left-popular mt-3"><a href="detay-2.html"><p><h4>Libertel Montmartre Opéra <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
+        <div class="left-popular mt-3"><a href="{% url 'detay2' %}"><p><h4>Libertel Montmartre Opéra <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
         <p><a href="#"> Roma Temple,Paris</a> <span style="margin-left: 1rem;"><a href="#">Haritada göster</a></span></p>
         <p>Merkez: 1,6 km <span style="margin-left: 1rem;">Metroya yakın</span></p>
         <p class="bg-p-popular" style="font-size: 13px; margin-left: 5px; width: 68%;"><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #000000;"></i>Travel Sustainable 2.seviye</p>
@@ -419,7 +420,7 @@
         <div class="d-flex">
         <div class="d-flex down-margin left">
         <div><img class="mt-3 mb-3" src="image/deniz/hotel-6.png" width="250px" height="250px"></div>
-        <div class="left-popular mt-3"><a href="detay-2.html"><p><h4>Paris Privilege <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
+        <div class="left-popular mt-3"><a href="{% url 'detay2' %}"><p><h4>Paris Privilege <i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
         <p><a href="#"> Inavlides, Paris</a> <span style="margin-left: 1rem;"><a href="#">Haritada göster</a></span></p>
         <p>Merkez: 3,4 km <span style="margin-left: 1rem;">Metroya yakın</span></p>
         <p class="bg-p-popular" style="font-size: 13px; margin-left: 5px; width: 68%;"><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #000000;"></i>Travel Sustainable 2.seviye</p>
@@ -455,110 +456,7 @@
 <!--FATİH-->
 
 
-{% comment %} <footer>  
-  <div class="row section-row align-items-center justify-content-center m-0" id="footer-bg">
-      <div class=" container col-md-5 text-white text-center">
-          <h2>Zamandan ve paradan tasarruf edin!</h2>
-          <p>Kaydolursanız en iyi fırsatları size göndereceğiz</p>
-      <div class="input-group">
-          <input type="text" class="form-control" placeholder="E-posta Adresi"
-               aria-label="Recipient's username" aria-describedby="button-addon2">
-          <button class="buton btn-primary ms-2 w-25" type="button">Üye ol</button>
-      </div>
-      </div>
-  </div>
-  <div class="footer-center">
-      <button class="buton-1">Tesisiniz kaydedin </button>
-  </div>
-  <div class="content-ul-li">
-      <ul class="container d-flex ">
-          <li><a style="list-style-type: none;" class="text-white" href="#">Mobil sürüm</a></li>
-          <li><a class="text-white" href="#">Hesabınız </a></li>
-          <li><a class="text-white" href="#">Rezervasyon değişikliklerinizi online yapın</a></li>
-          <li><a class="text-white" href="#">Müşteri hizmetleri yardımı</a></li>
-          <li><a class="text-white" href="#">İştirak olun</a></li>
-          <li><a class="text-white" href="#">Booking.com Business</a></li>
-      </ul>
-  </div>
-  <div class="row-1">
-      <col-md-5>
-      <ul>
-          <li><a href="#">Ülkeler</a></li>
-          <li><a href="#">Bölgeler</a></li>
-          <li><a href="#">Şehirler</a></li>
-          <li><a href="#">Semtler</a></li>
-          <li><a href="#">Havaalanları</a></li>
-          <li><a href="#">Oteller</a></li>
-          <li><a href="#">Simgesel</a></li>
-      </ul>
-      </col-md-5>
-      <ul>
-          <li><a href="#">Evler</a></li>
-          <li><a href="#">Daireler</a></li>
-          <li><a href="#">Tatil Köyleri</a></li>
-          <li><a href="#">Villalar</a></li>
-          <li><a href="#">Hosteller</a></li>
-          <li><a href="#">Oda ve Kahvaltılar</a></li>
-          <li><a href="#">Konukevleri</a></li>
-      </ul>
-      </col-md-5>
-      <ul>
-          <li><a href="#">Konaklayacak benzersiz yerler</a></li>
-          <li><a href="#">Tüm destinasyonlar</a></li>
-          <li><a href="#">Tüm uçuş noktaları</a></li>
-          <li><a href="#">Araba kiralama konumlarının tamamı</a></li>
-          <li><a href="#">Daha fazlasını keşfet</a></li>
-          <li><a href="#">Değerlendirmeler</a></li>
-          <li><a href="#">Aylık konaklamaları keşfedin</a></li>
-          <li><a href="#">Sezonluk fırsatlar ve tatil fırsatları</a></li>
-          <li><a href="#">Traveller Review Awards</a></li>
-      </ul>
-      </col-md-5>
-      <ul>
-          <li><a href="#">Araba kiralama</a></li>
-          <li><a href="#">Uçuş arayıcı</a></li>
-          <li><a href="#">Restoran rezervasyonları</a></li>
-          <li><a href="#">Booking.com Seyahat Temsilcileri</a></li>
-      </ul>
-      </col-md-5>
-      <ul>
-          <li><a href="#">Koronavirüs (COVID-19) hakkında sıkça sorulan sorular</a></li>
-          <li><a href="#">Booking.com hakkında</a></li>
-          <li><a href="#">Müşteri Hizmetleri yardımı</a></li>
-          <li><a href="#">Ortaklar için yardım sayfası</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Sürdürülebilirlik</a></li>
-          <li><a href="#">Basın merkezi</a></li>
-          <li><a href="#">Güvenlik kaynak merkezi</a></li>
-          <li><a href="#">Yatırımcı ilişkileri</a></li>
-          <li><a href="#">Şartlar ve koşullar</a></li>
-          <li><a href="#">Ortak ihtilaf çözüm merkezi</a></li>
-          <li><a href="#">Çalışma şeklimiz</a></li>
-          <li><a href="#">Gizlilik ve Çerez Bildirimi</a></li>
-          <li><a href="#">MSA Bildirimi</a></li>
-          <li><a href="#">Kurumsal iletişim</a></li>
-          <li><a href="#">İçerik kuralları ve raporlama</a></li>
-      </ul>
-      </col-md-5>
-  </div>
-  <div class="footer-end">
-          <p class="extranet"><a href="#">Extranet girişi</a></p>
-          <p class="telif">Telif © 1996–2023 Booking.com™. Tüm hakları saklıdır.</p>
-          <p class="booking">Booking.com, online seyahat ve ilgili hizmetlerde dünya lideri olan Booking Holdings Inc.'in bir parçasıdır.</p>
-      <div class="img-end">
-          <img src="img/Fatih/booking.png" alt="">
-          <img src="img/Fatih/priceline.png" alt="">
-          <img src="img/Fatih/kayak.png" alt="">
-          <img src="img/Fatih/agoda.png" alt="">
-          <img src="img/Fatih/rentalcars.png" alt="">
-          <img src="img/Fatih/opentable.png" alt="">
-      </div>
-  </div>
-
-
-</footer>
- {% endcomment %}
- {% include 'partials/_footer.html' %}
+{% include 'partials/_footer.html' %}
 
 
 
