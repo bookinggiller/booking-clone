@@ -1,8 +1,8 @@
-{% comment %} {% extends "base.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block title %}
-    <title>Detay2 sayfası</title>
+    <title>login sayfası</title>
 {% endblock title %}
 
 
@@ -38,11 +38,8 @@
   <section class="register-section">
     <div class="register-section-content">
       <h4 class="register-section-content-header">Giriş yapın veya hesap oluşturun</h4>
-      <form
-        action="
-      "
-        class="register-form"
-      >
+
+      {% comment %} <form method="POST" enctype action="" class="register-form">
         <label for="email">E-posta adresi</label>
         <input
           placeholder="E-posta adresinizi girin"
@@ -51,7 +48,34 @@
           id="email"
           class="register-input"
         />
-      </form>
+      </form> {% endcomment %}
+      {% comment %} <form method="POST" class="register-form">
+        {% csrf_token %}
+        <label for="{{ form.username.id_for_label }}">Kullanıcı Adı:</label>
+        {{ form.username }}
+        <br>
+        <label for="{{ form.password.id_for_label }}">Parola:</label>
+        {{ form.password }}
+        <br>
+        <button type="submit" class="register-button">Giriş Yap</button>
+    </form> {% endcomment %}
+    <form method="POST" class="register-form">
+      {% csrf_token %}
+      <div class="mt-2">
+          <div>
+              <label for="{{ form.username.id_for_label }}">Kullanıcı Adı:</label>
+              {{ form.username }}
+          </div>
+      </div>
+      <div class="mt-2">
+          <div>
+              <label for="{{ form.password.id_for_label }}">Parola:</label>
+              {{ form.password }}
+          </div>
+      </div>
+      <button type="submit" class="btn btn-success">Giriş Yap</button>
+    </form>
+
       <button class="register-button">E-postayla devam et</button>
       <div class="under-button-section">
         <div></div>
@@ -76,4 +100,4 @@
     </div>
   </section>
 
-  {% endblock content %} {% endcomment %}
+  {% endblock content %}

@@ -19,6 +19,8 @@ from django.urls import path,include
 from django.conf.urls.static import static
 from django.conf import settings
 from .views import *
+from user.views import *
+
 
 
 urlpatterns = [
@@ -27,7 +29,6 @@ urlpatterns = [
     path('detay1',detay1,name='detay1'),
     path('detay2',detay2,name='detay2'),
     path('odeme',odeme,name='odeme'),
-    path('login/',login,name='login')
-
-
+    # path('login/',login,name='login'),
+    path('user/login',include('user.urls')),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
