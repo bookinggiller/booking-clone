@@ -35,7 +35,6 @@ urlpatterns = [
     path('ok/',success,name='success'),
     path('fail/',fail,name='fail'),
     path('result/',result,name='result'),
-    # path('login/',login,name='login'),
-    path('user/login',include('user.urls')),
+    path('',include('user.urls')),
     path('movie/otelEkle/',include('movie.urls')),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
