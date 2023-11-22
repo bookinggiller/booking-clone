@@ -347,19 +347,21 @@
     </div>
 
 
+{% for otel in otel %}
+
 
 
       <div class="border-sales mt-3 section-image mb-3">
         <div class="d-flex">
         <div class="d-flex down-margin left">
-        <div><img class="mt-3 mb-3" src=" {{ form.image.url }}" width="250px" height="250px"></div>
-        <div class="left-popular mt-3"><a href="{% url 'detay2' %}"><p><h4>{{ form.name }}<i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
-        <p><a href="#"> {{ form.adress }}</a> <span style="margin-left: 1rem;"><a href="#">{{ form.map }}</a></span></p>
+        <div><img class="mt-3 mb-3" src=" {{ otel.image.url }}" width="250px" height="250px"></div>
+        <div class="left-popular mt-3"><a href="{% url 'detay2' %}"><p><h4>{{ otel.title }}<i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-solid fa-star" style="color: #dff250;"></i><i class="fa-regular fa-thumbs-up"></i></h4></p></a>
+        <p><a href="#"> {{ otel.adress }}</a> <span style="margin-left: 1rem;"><a href="#">{{ otel.map }}</a></span></p>
         <p>Merkez: 3,4 km <span style="margin-left: 1rem;">Metroya yakın</span></p>
         <p class="bg-p-popular" style="font-size: 13px; margin-left: 5px; width: 68%;"><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #19339a;"></i><i class="fa-solid fa-gem" style="color: #000000;"></i>Travel Sustainable 2.seviye</p>
         <div style="font-size: 12px;" class="mt-3 popular-border"><p><b>Standart Çift Kişilik veya Yataklı oda</b></p>
-        <p>{{ form.room }}</p>
-        <p style="color: green;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>{{ form.cancel }}</b></p>
+        <p>{{ otel.room }}</p>
+        <p style="color: green;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>{{ otel.cancel }}</b></p>
         <p style="color: green; width: 80%;"><i class="fa-solid fa-check" style="color: #36ce40;"></i> <b>Ön ödemeye gerek yok</b>- Tesiste <span style="margin-left: 15px;"><br>ödeyin</span></p>
         <p style="color: red;"><b>Sitemizde bu fiyata sadece 4 oda kaldı</b></p>
       </div>
@@ -368,20 +370,21 @@
   <div class="right ms-auto mt-3" style="margin-right: 2rem; text-align: right;">
   <div class="d-flex">
     <div class="right"><p style="text-align: right;"><b>Müthiş </b></p>
-    <p style="text-align: right; font-size: 13px;">{{ form.review_count }}</p>
+    <p style="text-align: right; font-size: 13px;">{{ otel.review_count }}</p>
     </div>
-    <div class="left mt-1 left-border-point"><p>{{ form.rating }}</p></div>
+    <div class="left mt-1 left-border-point"><p>{{ otel.rating }}</p></div>
   </div>
   <div><p style="color: rgb(7, 97, 97);"><b>Konum 9,5</b></p></div>
   <div class="mt-5 right-p">
     <p style="font-size: 14px; color: gray;">5 gece, 2 yetişkin</p>
-    <h4>{{ form.price }}</h4>
-    <p style="font-size: 14px; color: gray;">{{ form.tax }}</p>
+    <h4>{{ otel.price }}</h4>
+    <p style="font-size: 14px; color: gray;">{{ otel.tax }}</p>
     <button class="mt-2 look-button">Yer Durumuna bak  ></button>
   </div>
   </div>
 </div>
     </div>
+    {% endfor %}
   </div> 
   </div>
 
