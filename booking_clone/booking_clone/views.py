@@ -5,16 +5,23 @@ from django.http import HttpResponse,HttpResponseRedirect
 from django.urls import reverse
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
+from django.utils import timezone
+from movie.models import *
 
 
 # Create your views here.
 
 
 def index(request):
+    print(timezone.now())
     return render(request,'base.html')
 
 def detay1(request):
-    return render(request,'detay1.html')
+    otel = Otel.objects.all()
+    context ={
+        'otel':otel
+    }
+    return render(request,'detay1.html',context)
 
 def detay2(request):
     return render(request,'detay2.html')

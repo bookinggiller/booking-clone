@@ -24,7 +24,7 @@ class Otel(models.Model):
     # category = models.OneToOneField(category,on_delete=models.CASCADE) #* 1 kategoriye eklenne başka kategoriye eklenemez
 
     def save(self,*args,**kwargs):
-        self.slug = slugify(self.title)
+        self.slug= slugify(self.title)
         super().save(*args,**kwargs)
 
 

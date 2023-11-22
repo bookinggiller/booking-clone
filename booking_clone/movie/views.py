@@ -11,7 +11,7 @@ def otelEkle(request):
         form = FormOlustur(request.POST,request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('base')
+            return redirect('detay1')
         else:
             return render(request,'otel-ekle.html',{'form':form})
     form = FormOlustur()
