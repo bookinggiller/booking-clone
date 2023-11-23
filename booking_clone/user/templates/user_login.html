@@ -46,7 +46,8 @@
   </div>
   <div class="google-card-section">
     <div class="google-card">
-      <a href=""><i class="fa-brands fa-google fa-2x"></i></a>
+      {% load socialaccount %}
+      <a href="{% provider_login_url 'google' %}?next=/"><i class="fa-brands fa-google fa-2x"></i></a>
       <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
       <a href=""><i class="fa-brands fa-apple fa-2x"></i></a>
     </div>

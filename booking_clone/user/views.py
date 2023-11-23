@@ -2,6 +2,8 @@ from django.shortcuts import redirect, render
 from django.contrib.auth import authenticate,login,logout,get_user_model
 from django.contrib.auth.models import User
 from django.contrib.auth.hashers import check_password
+from django.contrib.auth.backends import ModelBackend
+
 # Create your views here.
 
 
@@ -23,7 +25,7 @@ def user_login(req):
             if user is not None and user.check_password(parola):
                 # Doğrulama başarılı, kullanıcıyı oturum açtır ve kayıt sayfasına yönlendir
                 print(f"Giriş başarılı: {user}")
-                login(req, user)
+                login(req, user,backend='django.contrib.auth.backends.ModelBackend')
                 return redirect('base')
             else:
                 # Eğer kullanıcı bulunsa da parola yanlışsa
