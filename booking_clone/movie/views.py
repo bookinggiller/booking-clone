@@ -5,7 +5,7 @@ from .forms  import *
 
 # Create your views here.
 
-# @login_required(login_url='/user/login/')
+@login_required(login_url='/user/login/')
 def otelEkle(request):
     if request.method=='POST':
         form = FormOlustur(request.POST,request.FILES)
@@ -16,3 +16,6 @@ def otelEkle(request):
             return render(request,'otel-ekle.html',{'form':form})
     form = FormOlustur()
     return render(request,'otel-ekle.html',{'form':form})
+
+
+
