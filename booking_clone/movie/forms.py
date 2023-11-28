@@ -25,7 +25,7 @@ class FormOlustur(forms.ModelForm):
             'rating':forms.NumberInput(attrs={'class':'form-control w-50','placeholder':'fiyat giriniz:'}),
             'map':forms.TextInput(attrs={'class':'form-control w-50','placeholder':'fiyat giriniz:'}),
             'review_count':forms.TextInput(attrs={'class':'form-control w-50','placeholder':'fiyat giriniz:'}),
-            'price':forms.NumberInput(attrs={'class':'form-control w-50','placeholder':'fiyat giriniz:'}),
+            'price':forms.TextInput(attrs={'class':'form-control w-50','placeholder':'fiyat giriniz:'}),
             'tax':forms.TextInput(attrs={'class':'form-control w-50','placeholder':'fiyat giriniz:'}),
             'cancel':forms.TextInput(attrs={'class':'form-control w-50','placeholder':'fiyat giriniz:'}),
             'room':forms.Textarea(attrs={'class':'form-control w-50'}),

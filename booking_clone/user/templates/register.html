@@ -1,6 +1,6 @@
-{% extends "base.html" %} 
-{% load static %} 
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block content %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}" />
+{% endblock css %}
 <header class="header">
     <div class="header_line_top">
         <div class="logo">
@@ -8,7 +8,6 @@
         </div>
         <div class="connection">
             <div class="country">
-                
                 <img src="https://icons.iconarchive.com/icons/iconscity/flags/16/turkey-icon.png" width="32"
                     height="32" />
             </div>
@@ -19,16 +18,13 @@
     </div>
 </header>
 <div class="container">
-            <h4 class="register-section-content-header">
-                Hesap Oluşturun
-            </h4>
+    <div class="register-section">
+        <div class="register-section-content">
+            <h4 class="register-section-content-header">Hesap Oluşturun</h4>
             <form method="POST" class="register-form">
-                {% csrf_token %} 
-                {% if hata %}
-                <div class="alert alert-danger">
-                    {{hata}}
-                </div>
-                {% endif %}            
+                {% csrf_token %} {% if hata %}
+                <div class="alert alert-danger">{{hata}}</div>
+                {% endif %}
                 <div class="mb-2">
                     <label for="kullanici-adi" class="form-label"> kullanıcı adı </label>
                     <input type="text" name="kullanici_adi" class="form-control" required />
@@ -74,7 +70,8 @@
                 <span class="footer-text">Tüm hakları saklıdır.</span>
                 <span class="footer-text">Telif hakkı (2006 - 2023) - Booking.com™</span>
             </div>
+        </div>
+    </div>
 </div>
-
 
 {% endblock content %}
