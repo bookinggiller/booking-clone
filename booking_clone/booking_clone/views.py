@@ -13,7 +13,6 @@ from movie.models import *
 
 
 def index(request):
-    print(timezone.now())
     return render(request,'base.html')
 
 def detay1(request):
