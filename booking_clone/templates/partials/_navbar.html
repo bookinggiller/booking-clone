@@ -15,9 +15,10 @@
                 <div class="question">
                     <div class="questionInt">?</div>
                 </div>
-                <a href="{% url 'otel-ekle' %}"><div class="button_type2">Tesisinizi kaydedin</div></a>
+                
                 {% if user.is_authenticated %}
                 <!-- Kullanıcı giriş yapmışsa -->
+                <a href="{% url 'otel-ekle' %}"><div class="button_type2">Tesisinizi kaydedin</div></a>
                 Merhaba, {{ user.username }}!  <!-- buraya şekil verilecek -->
                 <a href="{% url 'cikis' %}"><div class="button_type3">Çıkış Yap</div></a>
                 {% else %}
