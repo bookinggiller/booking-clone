@@ -31,7 +31,6 @@ class Otel(models.Model):
     def __str__(self):
         return self.title
     
-<<<<<<< HEAD
 class Tesis(models.Model):
     title = models.CharField(max_length=50)
     image = models.FileField(upload_to='hotels_images',null=True)
@@ -49,5 +48,3 @@ class Tesis(models.Model):
 
     def __str__(self):
         return self.title
-=======
->>>>>>> c011548b9b69428cb22a55081c864582bf5584a1

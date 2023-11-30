@@ -17,7 +17,6 @@ def otelEkle(request):
     form = FormOlustur()
     return render(request,'otel-ekle.html',{'form':form})
 
-<<<<<<< HEAD
 def tesisEkle(request):
     if request.method=='POST':
         form = TesisOlustur(request.POST,request.FILES)
@@ -28,7 +27,3 @@ def tesisEkle(request):
             return render(request,'tesis-ekle.html',{'form':form})
     form = TesisOlustur()
     return render(request,'tesis-ekle.html',{'form':form})
-=======
-
-
->>>>>>> c011548b9b69428cb22a55081c864582bf5584a1
