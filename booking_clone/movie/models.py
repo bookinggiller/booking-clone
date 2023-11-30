@@ -7,7 +7,7 @@ from django.utils import timezone
 # Create your models here.
 
 class Otel(models.Model):
-    title = models.CharField(max_length=20)
+    title = models.CharField(max_length=50)
     adres = models.CharField(max_length=100,default='bir adres')
     image = models.ImageField(upload_to='hotel_images',null=True)
     rating = models.CharField(max_length=5)
