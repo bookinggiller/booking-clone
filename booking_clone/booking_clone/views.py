@@ -13,12 +13,15 @@ from movie.models import *
 
 
 def index(request):
-    print(timezone.now())
-    return render(request,'base.html')
+    tesis = Tesis.objects.all()
+    context = {
+        'tesis':tesis
+    }
+    return render(request,'base.html',context)
 
 def detay1(request):
     otel = Otel.objects.all()
-    context ={
+    context = {
         'otel':otel
     }
     return render(request,'detay1.html',context)
