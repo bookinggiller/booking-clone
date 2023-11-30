@@ -31,3 +31,23 @@ class Otel(models.Model):
     def __str__(self):
         return self.title
     
+<<<<<<< HEAD
+class Tesis(models.Model):
+    title = models.CharField(max_length=50)
+    image = models.FileField(upload_to='hotels_images',null=True)
+    adress = models.CharField(max_length=50)
+    review_count = models.CharField(max_length=50)
+    rating = models.CharField(max_length=5)
+    price = models.CharField(max_length=10)
+    is_active = models.BooleanField()
+    created_at = models.DateTimeField(default=timezone.now) 
+
+    def save(self,*args,**kwargs):
+        self.slug= slugify(self.title)
+        super().save(*args,**kwargs)
+
+
+    def __str__(self):
+        return self.title
+=======
+>>>>>>> c011548b9b69428cb22a55081c864582bf5584a1
