@@ -40,7 +40,6 @@ urlpatterns = [
     path('',include('user.urls')),
     path('movie/otelEkle/',include('movie.urls')),
     path('',include('comments.urls')),
-
     #google
     path("", include("allauth.urls")),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
