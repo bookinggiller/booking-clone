@@ -1,14 +1,17 @@
-{% extends "base.html" %} 
-{% load static %} 
+{% extends "base.html" %}
+{% load static %}
+
 {% block title %}
 <title>Detay2 sayfası</title>
 {% endblock title %}
 
 
-{% block content %} 
+{% block content %}
+
 {% include 'partials/_navbar2.html' %}
 
 <!-- EMİNE SEARCH BAŞLANGIÇ -->
+
 
 <div class="container d-flex justify-content-between">
   <div class="filtreleme-2">
@@ -22,77 +25,36 @@
         <label>Seyahat noktası/tesis adı:</label>
         <div class="filtre-2__input">
           <span class="iconnn"><i class="bi bi-search bg-white"></i></span>
-          <input placeholder="Amsterdam" type="text" />
+          <input placeholder="Amsterdam" type="text">
         </div>
       </div>
       <div class="filtre-2-item">
         <label>Check-in tarihi</label>
         <div class="filtre-2__input">
           <span class="iconnn"><i class="bi bi-calendar2-plus"></i></span>
-          <input placeholder="Check-in tarihi" type="date" />
+          <input placeholder="Check-in tarihi" type="date">
         </div>
       </div>
       <div class="filtre-2-item">
         <label>Check-out tarihi</label>
         <div class="filtre-2__input">
           <span class="iconnn"><i class="bi bi-calendar2-plus"></i></span>
-          <input placeholder="Check-out tarihi" type="date" />
-
-
-    <!-- EMİNE SEARCH BİTİŞ -->
-
-
-    <!-- MUHAMMED -->
-    <div class="f-right w-75">
-        <div class="fiilter">
-            <ul>
-                <li><a href="#">Genel Bakış</a></li>
-                <li><a href="#">Daire Bilgisi Ve Fiyat</a> </li>
-                <li><a href="#">Özellikler</a></li>
-                <li><a href="#">Önemli Bilgiler</a></li>
-                <li><a href="#">En Yeni Tesislerimizden Bir Tanesi</a></li>
-            </ul>
-            <hr>
-
-            <div class="d-flex justify-content-between">
-                <h2>Loft Panoramico San Giovanni</h2>
-                <div id="icon" class="m-2 justify-content-around d-block">
-                    <i class="p-1 bi-heart"></i>
-                    <i class="p-3 bi bi-share"></i>
-                    <button class="buton-men">Bu Dairede Konaklamak İçin Yer Ayır</button>
-                </div>
-            </div>
-
-
-            <div class="foto">
-                <div class="foto-1">
-                    <img class="info-img" src="img/muhammed/dıs.jpg" alt=""><a href="#"></a>
-                    <img class="info-img" src="img/muhammed/ev.jpg" alt="">
-                    <img class="info-img" src="img/muhammed/bahce.jpg" alt="">
-                    <img class="info-img" src="img/muhammed/hol.jpg" alt="">
-                    <img class="info-img" src="img/muhammed/mutfak.jpg" alt="">
-                    <img class="info-img" src="img/muhammed/oturma.jpg" alt="">
-                    <img class="info-img" src="img/muhammed/496947425.jpg" alt="">
-                    <img class="info-img" src="img/muhammed/496947437.jpg" alt="">
-                    <img class="info-img" src="img/muhammed/496947443.jpg" alt="">
-                    <img class="info-img" src="{% static './img/muhammed' %}" alt="">
-                </div>
-            </div>
+          <input placeholder="Check-out tarihi" type="date">
         </div>
       </div>
       <div class="filtre-2-item">
         <div class="filtre-2__input">
-          <input placeholder="2 yetişkin 0 çocuk 1 oda" type="text" />
+          <input placeholder="2 yetişkin 0 çocuk 1 oda" type="text">
         </div>
       </div>
       <div class="filtre-2-item">
         <div class="d-flex justify-content-between align-items-center">
-          <input class="checkbox-2" type="checkbox" name="" id="" />
+          <input class="checkbox-2" type="checkbox" name="" id="">
           <p class="p-filtre-2 mb-0">Ev ve dairelerin tamamı</p>
           <span><i class="bi bi-question-circle"></i></span>
         </div>
         <div class="d-flex justify-content-between align-items-center">
-          <input class="checkbox-2" type="checkbox" />
+          <input class="checkbox-2" type="checkbox">
           <p class="p-filtre-2 mb-0">İş için seyahat ediyorum</p>
           <span><i class="bi bi-question-circle"></i></span>
         </div>
@@ -103,28 +65,24 @@
     </form>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.96777910432!2d2.264634515785194!3d48.85882549208526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20Fransa!5e0!3m2!1str!2str!4v1699274412514!5m2!1str!2str"
-      width="290"
-      height="200"
-      style="border: none; border-radius: 10px"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+      width="290" height="200" style="border: none; border-radius: 10px;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
   <!-- EMİNE SEARCH BİTİŞ -->
+
 
   <!-- MUHAMMED -->
   <div class="f-right w-75">
     <div class="fiilter">
       <ul>
         <li><a href="#">Genel Bakış</a></li>
-        <li><a href="#">Daire Bilgisi Ve Fiyat</a></li>
+        <li><a href="#">Daire Bilgisi Ve Fiyat</a> </li>
         <li><a href="#">Özellikler</a></li>
         <li><a href="#">Önemli Bilgiler</a></li>
         <li><a href="#">En Yeni Tesislerimizden Bir Tanesi</a></li>
       </ul>
-      <hr />
+      <hr>
 
       <div class="d-flex justify-content-between">
         <h2>Loft Panoramico San Giovanni</h2>
@@ -135,19 +93,18 @@
         </div>
       </div>
 
+
       <div class="foto">
         <div class="foto-1">
-          <img class="info-img" src="img/muhammed/dıs.jpg" alt="" /><a
-            href="#"
-          ></a>
-          <img class="info-img" src="img/muhammed/ev.jpg" alt="" />
-          <img class="info-img" src="img/muhammed/bahce.jpg" alt="" />
-          <img class="info-img" src="img/muhammed/hol.jpg" alt="" />
-          <img class="info-img" src="img/muhammed/mutfak.jpg" alt="" />
-          <img class="info-img" src="img/muhammed/oturma.jpg" alt="" />
-          <img class="info-img" src="img/muhammed/496947425.jpg" alt="" />
-          <img class="info-img" src="img/muhammed/496947437.jpg" alt="" />
-          <img class="info-img" src="img/muhammed/496947443.jpg" alt="" />
+          <img class="info-img" src="img/muhammed/dıs.jpg" alt=""><a href="#"></a>
+          <img class="info-img" src="img/muhammed/ev.jpg" alt="">
+          <img class="info-img" src="img/muhammed/bahce.jpg" alt="">
+          <img class="info-img" src="img/muhammed/hol.jpg" alt="">
+          <img class="info-img" src="img/muhammed/mutfak.jpg" alt="">
+          <img class="info-img" src="img/muhammed/oturma.jpg" alt="">
+          <img class="info-img" src="img/muhammed/496947425.jpg" alt="">
+          <img class="info-img" src="img/muhammed/496947437.jpg" alt="">
+          <img class="info-img" src="img/muhammed/496947443.jpg" alt="">
         </div>
       </div>
     </div>
@@ -244,26 +201,16 @@
       Cosy Studio 2P - Voltaire Town Hall of 11th arrondissement Paris özel
       talep alıyor - bir sonraki adımda ekleyin!
     </p>
-    <a href="{% url 'odeme' %}"
-      ><button class="button-5">Rezervasyon Yap</button></a
-    >
+    <a href="{% url 'odeme' %}"><button class="button-5">Rezervasyon Yap</button></a>
   </div>
 
   <div class="form">
     <div class="form-2">
       <div class="icon-bilgii">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          fill="currentColor"
-          class="bi bi-arrow-bar-right"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-right"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z" />
         </svg>
         <p class="check-in">Check-in</p>
       </div>
@@ -277,18 +224,10 @@
 
     <div class="form-3">
       <div class="icon-bilgii-two">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          fill="currentColor"
-          class="bi bi-arrow-bar-left"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-left"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z" />
         </svg>
         <p class="check-out">Check-out</p>
       </div>
@@ -299,20 +238,11 @@
 
     <div class="form-4">
       <div class="icon-bilgii-tree">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="currentColor"
-          class="bi bi-exclamation-circle"
-          viewBox="0 0 16 16"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+          class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
           <path
-            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-          />
-          <path
-            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"
-          />
+            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
         </svg>
         <p class="tree-one">
           İptal/ <br />
@@ -331,20 +261,12 @@
 
     <div class="form-5">
       <div class="icon-bilgii-four">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="29"
-          height="29"
-          fill="currentColor"
-          class="bi bi-person-exclamation"
-          viewBox="0 0 16 16"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor"
+          class="bi bi-person-exclamation" viewBox="0 0 16 16">
           <path
-            d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm.256 7a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"
-          />
+            d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm.256 7a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z" />
           <path
-            d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1.5a.5.5 0 0 0 1 0V11a.5.5 0 0 0-.5-.5Zm0 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"
-          />
+            d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1.5a.5.5 0 0 0 1 0V11a.5.5 0 0 0-.5-.5Zm0 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z" />
         </svg>
         <p class="four-one">Çocuklar ve Yataklar</p>
       </div>
@@ -362,17 +284,10 @@
 
     <div class="form-6">
       <div class="icon-bilgii-five">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="28"
-          fill="currentColor"
-          class="bi bi-person"
-          viewBox="0 0 16 16"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person"
+          viewBox="0 0 16 16">
           <path
-            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
-          />
+            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
         </svg>
         <p class="yas">Yaş Kısıtlaması Yok</p>
       </div>
@@ -383,20 +298,11 @@
 
     <div class="form-7">
       <div class="icon-bilgii-seven">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          fill="currentColor"
-          class="bi bi-credit-card"
-          viewBox="0 0 16 16"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-credit-card"
+          viewBox="0 0 16 16">
           <path
-            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"
-          />
-          <path
-            d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"
-          />
+            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+          <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
         </svg>
         <p class="kabul-odeme">
           Kabul edilen ödeme <br />
@@ -427,17 +333,10 @@
 
     <div class="form-9">
       <div class="icon-bilgii-nine">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="28"
-          fill="currentColor"
-          class="bi bi-star"
-          viewBox="0 0 16 16"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-star"
+          viewBox="0 0 16 16">
           <path
-            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
-          />
+            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
         </svg>
         <p class="party">Partiler</p>
       </div>
@@ -448,20 +347,12 @@
 
     <div class="form-10">
       <div class="icon-bilgii-ten">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="28"
-          fill="currentColor"
-          class="bi bi-exclamation-diamond"
-          viewBox="0 0 16 16"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+          class="bi bi-exclamation-diamond" viewBox="0 0 16 16">
           <path
-            d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
-          />
+            d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z" />
           <path
-            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"
-          />
+            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
         </svg>
         <p class="evcil">Evcil Hayvanlar</p>
       </div>
@@ -472,24 +363,15 @@
   </div>
 </div>
 
-<div class="container mt-5 mb-5">
+<div class="container" style="margin-top: 5rem;">
   <div class="carousel__heading fw-bold fs-4 mb-3">Yorumlar</div>
-  <a href="{% url 'yorum-ekle' %}"
-    ><button class="btn btn-primary mb-3">Yorum Ekle</button></a
-  >
-  <swiper-container
-    class="swiper-3"
-    pagination="true"
-    pagination-clickable="true"
-    space-between="30"
-    slides-per-view="3"
-  >
+  <a href="{% url 'yorum-ekle' %}"><button class="btn btn-primary mb-3">Yorum Ekle</button></a>
+  <swiper-container class="swiper-3" pagination="true" pagination-clickable="true" space-between="30"
+    slides-per-view="3">
     {% for yorum in yorum %}
     <swiper-slide style="height: 250px">
       <div class="yorum-card p-4">
-        <p class="rating ms-0">
-          {{ yorum.rating }}<span class="fa fa-star checked"></span>
-        </p>
+        <p class="rating ms-0">{{ yorum.rating }}<span class="fa fa-star checked"></span></p>
         <div class="yorum-header d-flex align-items-center mt-3">
           <div class="user-icon ms-3 me-4">{{ user.username|first|upper }}</div>
           <p class="fw-bold">{{ user.username|upper }}</p>
@@ -514,26 +396,14 @@
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne"
-              aria-expanded="false"
-              aria-controls="flush-collapseOne"
-            >
-              <strong
-                >Loft Canettes, Paris merkezine ne kadar uzaklıkta?</strong
-              >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <strong>Loft Canettes, Paris merkezine ne kadar uzaklıkta?</strong>
               <span class="custom-accordion-icon-open"></span>
               <span class="custom-accordion-icon-closed"></span>
             </button>
           </h2>
-          <div
-            id="flush-collapseOne"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               Loft Canettes, Paris merkezine 1,4 km uzaklıkta. Tüm mesafeler düz
               bir çizgi çizilerek hesaplanır. Gerçek seyahat mesafeleri
@@ -543,22 +413,12 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo"
-              aria-expanded="false"
-              aria-controls="flush-collapseTwo"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
               <strong>Loft Canettes tesisinde neler yapılabilir?</strong>
             </button>
           </h2>
-          <div
-            id="flush-collapseTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               Loft Canettes aşağıdaki aktiviteleri ve hizmetleri sunmaktadır
               (ücrete tabi olabilir):
@@ -567,24 +427,12 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree"
-              aria-expanded="false"
-              aria-controls="flush-collapseThree"
-            >
-              <strong
-                >Loft Canettes tesisinde giriş ve çıkış saatleri nedir?</strong
-              >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <strong>Loft Canettes tesisinde giriş ve çıkış saatleri nedir?</strong>
             </button>
           </h2>
-          <div
-            id="flush-collapseThree"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               Loft Canettes tesisinde giriş saati 13:00 iken çıkış saati 12:00
               itibarıyla sona erer
@@ -593,24 +441,12 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseFour"
-              aria-expanded="false"
-              aria-controls="flush-collapseFour"
-            >
-              <strong
-                >Loft Canettes tesisinde konaklamanın maliyeti nedir?</strong
-              >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              <strong>Loft Canettes tesisinde konaklamanın maliyeti nedir?</strong>
             </button>
           </h2>
-          <div
-            id="flush-collapseFour"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               Loft Canettes tesisindeki fiyatlar konaklamanıza bağlı olarak
               değişiklik gösterebilir (ör. seçtiğiniz tarihler, otel koşulları
@@ -620,25 +456,13 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseFive"
-              aria-expanded="false"
-              aria-controls="flush-collapseFive"
-            >
-              <strong
-                >2 pièces 50 m2 lumineux avec balcon tesisinde giriş ve çıkış
-                saatleri nedir?</strong
-              >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              <strong>2 pièces 50 m2 lumineux avec balcon tesisinde giriş ve çıkış
+                saatleri nedir?</strong>
             </button>
           </h2>
-          <div
-            id="flush-collapseFive"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
+          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               balcon tesisinde giriş saati 14:00 iken çıkış saati 11:00
               itibarıyla sona erer.
@@ -650,4 +474,6 @@
   </div>
 </div>
 
-{% include 'partials/_footer.html' %} {% endblock content %}
+{% include 'partials/_footer.html' %}
+
+{% endblock content %}

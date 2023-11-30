@@ -536,9 +536,7 @@ h2 {
 }
 
 /* 
-MUHAMMED DETAY-2 CSS */
-
-
+MUHAMMED DETAY-2 CSS başlangıç */
 
 .filtre-1{
     border: 1px solid gray;
@@ -648,6 +646,8 @@ MUHAMMED DETAY-2 CSS */
     margin-bottom: 10px;
 
 }
+
+/* MUHAMMED DETAY-2 CSS bitiş */
 
 /* MUHAMMED DETAY-2 CSS */
 
@@ -1366,8 +1366,8 @@ footer{
 .form{
     position: relative;
     top: 5rem;
-    width: 90%;
-    height: 86vh;
+    width: 100%;
+    height: 90vh;
     margin: auto;
     border: 1px solid gray;
 }
