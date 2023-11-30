@@ -13,15 +13,11 @@ from movie.models import *
 
 
 def index(request):
-<<<<<<< HEAD
     tesis = Tesis.objects.all()
     context = {
         'tesis':tesis
     }
     return render(request,'base.html',context)
-=======
-    return render(request,'base.html')
->>>>>>> c011548b9b69428cb22a55081c864582bf5584a1
 
 def detay1(request):
     otel = Otel.objects.all()
