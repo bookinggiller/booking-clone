@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
 ]
 #google
-SOCIALACCOUNT_LOGIN_ON_GET=True
+SOCIALACCOUNT_LOGIN_ON_GET=False,
 #google
 SOCIALACCOUNT_PROVIDERS = {
     'google': {

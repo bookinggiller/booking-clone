@@ -1,9 +1,9 @@
 {% extends "base.html" %} 
 {% load static %} 
-
-{% comment %} {% block title %}
+{% block title %}
 <title>Detay2 sayfası</title>
-{% endblock title %}  {% endcomment %}
+{% endblock title %}
+
 
 {% block content %} 
 {% include 'partials/_navbar2.html' %}
@@ -37,6 +37,47 @@
         <div class="filtre-2__input">
           <span class="iconnn"><i class="bi bi-calendar2-plus"></i></span>
           <input placeholder="Check-out tarihi" type="date" />
+
+
+    <!-- EMİNE SEARCH BİTİŞ -->
+
+
+    <!-- MUHAMMED -->
+    <div class="f-right w-75">
+        <div class="fiilter">
+            <ul>
+                <li><a href="#">Genel Bakış</a></li>
+                <li><a href="#">Daire Bilgisi Ve Fiyat</a> </li>
+                <li><a href="#">Özellikler</a></li>
+                <li><a href="#">Önemli Bilgiler</a></li>
+                <li><a href="#">En Yeni Tesislerimizden Bir Tanesi</a></li>
+            </ul>
+            <hr>
+
+            <div class="d-flex justify-content-between">
+                <h2>Loft Panoramico San Giovanni</h2>
+                <div id="icon" class="m-2 justify-content-around d-block">
+                    <i class="p-1 bi-heart"></i>
+                    <i class="p-3 bi bi-share"></i>
+                    <button class="buton-men">Bu Dairede Konaklamak İçin Yer Ayır</button>
+                </div>
+            </div>
+
+
+            <div class="foto">
+                <div class="foto-1">
+                    <img class="info-img" src="img/muhammed/dıs.jpg" alt=""><a href="#"></a>
+                    <img class="info-img" src="img/muhammed/ev.jpg" alt="">
+                    <img class="info-img" src="img/muhammed/bahce.jpg" alt="">
+                    <img class="info-img" src="img/muhammed/hol.jpg" alt="">
+                    <img class="info-img" src="img/muhammed/mutfak.jpg" alt="">
+                    <img class="info-img" src="img/muhammed/oturma.jpg" alt="">
+                    <img class="info-img" src="img/muhammed/496947425.jpg" alt="">
+                    <img class="info-img" src="img/muhammed/496947437.jpg" alt="">
+                    <img class="info-img" src="img/muhammed/496947443.jpg" alt="">
+                    <img class="info-img" src="{% static './img/muhammed' %}" alt="">
+                </div>
+            </div>
         </div>
       </div>
       <div class="filtre-2-item">

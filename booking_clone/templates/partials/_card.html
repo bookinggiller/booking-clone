@@ -373,136 +373,48 @@
 
     <!-- EMİNE carousel yapısı başlangıç -->
 
+    
+    
+    
 
     <div class="container d-flex flex-column">
         <div class="carousel__heading fw-bold fs-4">
             En benzersiz tesislerimizde konaklayın
+            <a href="{% url 'tesis-ekle' %}"><button class="ms-2" style="background-color: #003b95; border-radius: 5px;">Tesis Ekle</button></a>  
         </div>
         <div class="carousel__prev__heading mt-1 mb-3">
             Kalelerden villalara teknelerden iglolara, hepsi bizde var
         </div>
+
+        
         <swiper-container class="swiper-1" init="false">
+
+            {% for tesis in tesis %}
             <swiper-slide>
                 <div class="booking__card">
-                    <img class="card__image" src="{% static './img/emine/ev1.jpg' %}" alt="home" />
+                    <img class="card__image" src="{{ tesis.image.url }}" alt="home" />
                     <div class="card-body card-body--e p-2">
-                        <h4 class="main-font">Aparthotel Stare Miasto</h4>
-                        <p class="card__address">Old Town, Polonya, Krakow</p>
+                        <h4 class="main-font">{{ tesis.title }}</h4>
+                        <p class="card__address">{{ tesis.adress }}</p>
                         <div class="card__rating mt-2">
                             <div class="card__badge me-2">
-                                <p class="small-font text-white">8.7</p>
+                                <p class="small-font text-white">{{ tesis.rating }}</p>
                             </div>
                             <p class="card__rating-rate me-1">Müthiş</p>
-                            <p class="small-font">. 2.460 değerlendirme</p>
+                            <p class="small-font">{{ tesis.review_count }}</p>
                         </div>
                         <div class="card__price">
                             <p class="small-font">En düşük</p>
-                            <h4 class="main-font ms-1">TL 5.205</h4>
+                            <h4 class="main-font ms-1">{{ tesis.price }}</h4>
                         </div>
                     </div>
                 </div>
             </swiper-slide>
-            <swiper-slide>
-                <div class="booking__card">
-                    <img class="card__image" src="{% static './img/emine/ev2.jpg' %}" alt="home" />
-                    <div class="card-body card-body--e p-2">
-                        <h4 class="main-font">Aparthotel Stare Miasto</h4>
-                        <p class="card__address">Old Town, Polonya, Krakow</p>
-                        <div class="card__rating mt-2">
-                            <div class="card__badge me-2">
-                                <p class="small-font text-white">8.7</p>
-                            </div>
-                            <p class="card__rating-rate me-1">Müthiş</p>
-                            <p class="small-font">. 2.460 değerlendirme</p>
-                        </div>
-                        <div class="card__price">
-                            <p class="small-font">En düşük</p>
-                            <h4 class="main-font ms-1">TL 5.205</h4>
-                        </div>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="booking__card">
-                    <img class="card__image" src="{% static './img/emine/ev3.jpg' %}" alt="home" />
-                    <div class="card-body card-body--e p-2">
-                        <h4 class="main-font">Aparthotel Stare Miasto</h4>
-                        <p class="card__address">Old Town, Polonya, Krakow</p>
-                        <div class="card__rating mt-2">
-                            <div class="card__badge me-2">
-                                <p class="small-font text-white">8.7</p>
-                            </div>
-                            <p class="card__rating-rate me-1">Müthiş</p>
-                            <p class="small-font">. 2.460 değerlendirme</p>
-                        </div>
-                        <div class="card__price">
-                            <p class="small-font">En düşük</p>
-                            <h4 class="main-font ms-1">TL 5.205</h4>
-                        </div>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="booking__card">
-                    <img class="card__image" src="{% static './img/emine/ev4.jpg' %}" alt="home" />
-                    <div class="card-body card-body--e p-2">
-                        <h4 class="main-font">Aparthotel Stare Miasto</h4>
-                        <p class="card__address">Old Town, Polonya, Krakow</p>
-                        <div class="card__rating mt-2">
-                            <div class="card__badge me-2">
-                                <p class="small-font text-white">8.7</p>
-                            </div>
-                            <p class="card__rating-rate me-1">Müthiş</p>
-                            <p class="small-font">. 2.460 değerlendirme</p>
-                        </div>
-                        <div class="card__price">
-                            <p class="small-font">En düşük</p>
-                            <h4 class="main-font ms-1">TL 5.205</h4>
-                        </div>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="booking__card">
-                    <img class="card__image" src="{% static './img/emine/ev5.jpg' %}" alt="home" />
-                    <div class="card-body card-body--e p-2">
-                        <h4 class="main-font">Aparthotel Stare Miasto</h4>
-                        <p class="card__address">Old Town, Polonya, Krakow</p>
-                        <div class="card__rating mt-2">
-                            <div class="card__badge me-2">
-                                <p class="small-font text-white">8.7</p>
-                            </div>
-                            <p class="card__rating-rate me-1">Müthiş</p>
-                            <p class="small-font">. 2.460 değerlendirme</p>
-                        </div>
-                        <div class="card__price">
-                            <p class="small-font">En düşük</p>
-                            <h4 class="main-font ms-1">TL 5.205</h4>
-                        </div>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="booking__card">
-                    <img class="card__image" src="{% static './img/emine/ev6.jpg' %}" alt="home" />
-                    <div class="card-body card-body--e p-2">
-                        <h4 class="main-font">Aparthotel Stare Miasto</h4>
-                        <p class="card__address">Old Town, Polonya, Krakow</p>
-                        <div class="card__rating mt-2">
-                            <div class="card__badge me-2">
-                                <p class="small-font text-white">8.7</p>
-                            </div>
-                            <p class="card__rating-rate me-1">Müthiş</p>
-                            <p class="small-font">. 2.460 değerlendirme</p>
-                        </div>
-                        <div class="card__price">
-                            <p class="small-font">En düşük</p>
-                            <h4 class="main-font ms-1">TL 5.205</h4>
-                        </div>
-                    </div>
-                </div>
-            </swiper-slide>
+            {% endfor %}
         </swiper-container>
+
+        
+
         <div class="container__heading d-flex justify-content-between">
             <div class="carousel__heading fw-bold fs-4">
                 Konukların beğendiği evler
@@ -512,126 +424,32 @@
                 keşfet</a>
         </div>
         <swiper-container class="swiper-2" init="false">
+
+            {% for tesis in tesis %}
+            
             <swiper-slide>
                 <div class="booking__card">
-                    <img class="card__image" src="{% static './img/emine/ev1.jpg' %}" alt="home" />
+                    <img class="card__image" src="{{ tesis.image.url }}" alt="home" />
                     <div class="card-body card-body--e p-2">
-                        <h4 class="main-font">Aparthotel Stare Miasto</h4>
-                        <p class="card__address">Old Town, Polonya, Krakow</p>
+                        <h4 class="main-font">{{ tesis.title }}</h4>
+                        <p class="card__address">{{ tesis.adress }}</p>
                         <div class="card__rating mt-2">
                             <div class="card__badge me-2">
-                                <p class="small-font text-white">8.7</p>
+                                <p class="small-font text-white">{{ tesis.rating }}</p>
                             </div>
                             <p class="card__rating-rate me-1">Müthiş</p>
-                            <p class="small-font">. 2.460 değerlendirme</p>
+                            <p class="small-font">{{ tesis.review_count }}</p>
                         </div>
                         <div class="card__price">
                             <p class="small-font">En düşük</p>
-                            <h4 class="main-font ms-1">TL 5.205</h4>
+                            <h4 class="main-font ms-1">{{ tesis.price }}</h4>
                         </div>
                     </div>
                 </div>
             </swiper-slide>
-            <swiper-slide>
-                <div class="booking__card">
-                    <img class="card__image" src="{% static './img/emine/ev2.jpg' %}" alt="home" />
-                    <div class="card-body card-body--e p-2">
-                        <h4 class="main-font">Aparthotel Stare Miasto</h4>
-                        <p class="card__address">Old Town, Polonya, Krakow</p>
-                        <div class="card__rating mt-2">
-                            <div class="card__badge me-2">
-                                <p class="small-font text-white">8.7</p>
-                            </div>
-                            <p class="card__rating-rate me-1">Müthiş</p>
-                            <p class="small-font">. 2.460 değerlendirme</p>
-                        </div>
-                        <div class="card__price">
-                            <p class="small-font">En düşük</p>
-                            <h4 class="main-font ms-1">TL 5.205</h4>
-                        </div>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="booking__card">
-                    <img class="card__image" src="{% static './img/emine/ev4.jpg' %}" alt="home" />
-                    <div class="card-body card-body--e p-2">
-                        <h4 class="main-font">Aparthotel Stare Miasto</h4>
-                        <p class="card__address">Old Town, Polonya, Krakow</p>
-                        <div class="card__rating mt-2">
-                            <div class="card__badge me-2">
-                                <p class="small-font text-white">8.7</p>
-                            </div>
-                            <p class="card__rating-rate me-1">Müthiş</p>
-                            <p class="small-font">. 2.460 değerlendirme</p>
-                        </div>
-                        <div class="card__price">
-                            <p class="small-font">En düşük</p>
-                            <h4 class="main-font ms-1">TL 5.205</h4>
-                        </div>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="booking__card">
-                    <img class="card__image" src="{% static './img/emine/ev4.jpg' %}" alt="home" />
-                    <div class="card-body card-body--e p-2">
-                        <h4 class="main-font">Aparthotel Stare Miasto</h4>
-                        <p class="card__address">Old Town, Polonya, Krakow</p>
-                        <div class="card__rating mt-2">
-                            <div class="card__badge me-2">
-                                <p class="small-font text-white">8.7</p>
-                            </div>
-                            <p class="card__rating-rate me-1">Müthiş</p>
-                            <p class="small-font">. 2.460 değerlendirme</p>
-                        </div>
-                        <div class="card__price">
-                            <p class="small-font">En düşük</p>
-                            <h4 class="main-font ms-1">TL 5.205</h4>
-                        </div>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="booking__card">
-                    <img class="card__image" src="{% static './img/emine/ev5.jpg' %}" alt="home" />
-                    <div class="card-body card-body--e p-2">
-                        <h4 class="main-font">Aparthotel Stare Miasto</h4>
-                        <p class="card__address">Old Town, Polonya, Krakow</p>
-                        <div class="card__rating mt-2">
-                            <div class="card__badge me-2">
-                                <p class="small-font text-white">8.7</p>
-                            </div>
-                            <p class="card__rating-rate me-1">Müthiş</p>
-                            <p class="small-font">. 2.460 değerlendirme</p>
-                        </div>
-                        <div class="card__price">
-                            <p class="small-font">En düşük</p>
-                            <h4 class="main-font ms-1">TL 5.205</h4>
-                        </div>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="booking__card">
-                    <img class="card__image" src="{% static './img/emine/ev6.jpg' %}" alt="home" />
-                    <div class="card-body card-body--e p-2">
-                        <h4 class="main-font">Aparthotel Stare Miasto</h4>
-                        <p class="card__address">Old Town, Polonya, Krakow</p>
-                        <div class="card__rating mt-2">
-                            <div class="card__badge me-2">
-                                <p class="small-font text-white">8.7</p>
-                            </div>
-                            <p class="card__rating-rate me-1">Müthiş</p>
-                            <p class="small-font">. 2.460 değerlendirme</p>
-                        </div>
-                        <div class="card__price">
-                            <p class="small-font">En düşük</p>
-                            <h4 class="main-font ms-1">TL 5.205</h4>
-                        </div>
-                    </div>
-                </div>
-            </swiper-slide>
+
+            {% endfor %}
+            
         </swiper-container>
     </div>
 
