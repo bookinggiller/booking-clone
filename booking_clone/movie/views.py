@@ -17,6 +17,7 @@ def otelEkle(request):
     form = FormOlustur()
     return render(request,'otel-ekle.html',{'form':form})
 
+@login_required(login_url='/user/login/')
 def tesisEkle(request):
     if request.method=='POST':
         form = TesisOlustur(request.POST,request.FILES)
