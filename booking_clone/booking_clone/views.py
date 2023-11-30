@@ -7,6 +7,8 @@ from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
 from django.utils import timezone
 from movie.models import *
+from comments.models import *
+
 
 
 # Create your views here.
@@ -27,13 +29,20 @@ def detay1(request):
     return render(request,'detay1.html',context)
 
 def detay2(request):
-    return render(request,'detay2.html')
+    yorum = Yorum.objects.all()
+    context ={
+        'yorum':yorum
+    }
+    return render(request,'detay2.html',context)
 
 def odeme(request):
     return render(request,'odeme.html')
 
 def login(request):
     return render(request,'user/login.html')
+
+def yorumEkle(request):
+    return render(request,'yorum-ekle.html')
 
 api_key = 'sandbox-ZWT6YkC1jMcMwwpnAKeLR5hTWdFCcwBo'
 secret_key = 'sandbox-2Sldp43J1kJliUDZ6woHjvLCdK0HLjq7'

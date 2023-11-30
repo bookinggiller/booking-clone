@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     # oluşturduğum appler buraya eklendi
     'user',
     'movie',
+    'comments',
     #bootstrap ve fontawesome install sonrası eklendi
     'django_bootstrap5',
     'iyzipay',

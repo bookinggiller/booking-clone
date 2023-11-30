@@ -21,6 +21,8 @@ from django.conf import settings
 from .views import *
 from user.views import *
 from movie.views import *
+from comments.views import *
+
 
 
 
@@ -37,6 +39,7 @@ urlpatterns = [
     path('result/',result,name='result'),
     path('',include('user.urls')),
     path('movie/otelEkle/',include('movie.urls')),
+    path('',include('comments.urls')),
     path('movie/tesisEkle/',include('movie.urls')),
     #google
     path("", include("allauth.urls")),
