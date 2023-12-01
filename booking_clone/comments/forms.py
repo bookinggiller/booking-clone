@@ -8,7 +8,6 @@ class YorumOlustur(forms.ModelForm):
         labels ={
             'rating':'rating',
             'description':'description',
-            
         },
 
         widgets = {

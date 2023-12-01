@@ -6,10 +6,13 @@
 
 .container {
     margin: auto;
-    width: 100%;
+    width: 80%;
 }
 
+
+
 .giris{
+    height: 10vh;
     display: flex;
     border: 1px solid lightgray;
     border-radius: 10px;
@@ -80,7 +83,7 @@
     justify-content: end;
 }
 .odemebtn{
-    width: 100%;
+    width: 40%;
     height: 50px;
     border-radius: 5px;
     color: white;
