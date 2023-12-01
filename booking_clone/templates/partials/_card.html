@@ -380,7 +380,11 @@
     <div class="container d-flex flex-column">
         <div class="carousel__heading fw-bold fs-4">
             En benzersiz tesislerimizde konaklayın
+
+            {% if user.is_authenticated %}
             <a href="{% url 'tesis-ekle' %}"><button class="ms-2" style="background-color: #003b95; border-radius: 5px;">Tesis Ekle</button></a>  
+            {% endif %}
+            
         </div>
         <div class="carousel__prev__heading mt-1 mb-3">
             Kalelerden villalara teknelerden iglolara, hepsi bizde var
